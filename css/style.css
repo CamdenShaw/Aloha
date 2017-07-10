@@ -1,0 +1,419 @@
+
+body {
+  margin: 0px;
+  font-size: 14px;
+  font-family: Raleway, sans-serif;
+  background-color: pink;
+}
+
+header {
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Playfair-Display, sans-serif;
+}
+
+a {
+  color: #e2574c;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b1574c;
+}
+
+#header {
+  z-index: 4;
+  width: 100%;
+  height: 108px;
+  position: fixed;
+  background-color: white;
+}
+
+.box-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hi {
+  z-index: 0;
+  position: relative;
+  margin-top: -56px;
+}
+
+.icon-box {
+  order: 1;
+  width: 50%;
+  display: flex;
+}
+.icon {
+  height: 50px;
+  align-items: center;
+  margin: 10px;
+  justify-content: flex-start;
+}
+
+.cart-box {
+  order: 2;
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.cart {
+  align-items: center;
+  height: 50px;
+  margin: 10px;
+}
+
+.click-box {
+  border-top: #D7d7d7 solid 1px;
+  order: 3;
+  width: 92%;
+  display: flex;
+  padding: 11px;
+  justify-content: center;
+}
+.click {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.clack {
+  display: inline;
+  font-size: 13px;
+  font-family: Raleway-bold, sans-serif(bold);
+  font-weight: 700;
+  padding: 10px;
+  text-transform: uppercase; 
+}
+
+#banner {
+  margin-top: 120px;
+  width: 100%;
+  display: flex;
+}
+
+.banner-bg {
+  width: 100%;
+  background-image:  url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
+  height: 400px;
+  background-position: center 60px, center top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 150px, cover;
+  display:flex;
+  z-index: 3;
+}
+
+.banner-text-box {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.banner-text {
+  text-align: center;
+  z-index: 1;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.banner-text p {
+  text-transform: uppercase;
+  font-family: Raleway-bold, sans-serif;
+  flex-basis: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 0;
+}
+
+.banner-text h2 {
+  font-size: 35px;
+  flex-basis: 100%;
+  font-weight: 300;
+  margin: 0px;
+  z-index: 0;
+}
+
+#handy {
+  text-align: center;
+  z-index: 3;
+  margin-top: 4em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#handy h3 {
+  font-family: Playfair Display-bold;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+.handy {
+  font-family: Playfair Display-italic;
+  font-weight: 300;
+}
+
+#handy p {
+  font-size: 1.1em;
+  line-height: 2;
+  margin-top: 1em;
+}
+
+#categories {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.t-image {
+  width:100%;
+}
+
+.rectangle {
+  z-index: 0;
+  width: 100%;
+  max-width: 599px;
+  position: relative;
+}
+
+.square {
+  z-index:0;
+  width: 50%;
+  max-width: 299.5px;
+  position: relative;
+  
+}
+
+.rectangle.one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/mens-category.jpg');
+  width: 100%;
+  height: 25%;
+  flex-shrink: 1;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*.opacity {
+  background: rgba(0, 0, 0, 0.2);
+  position:absolute;
+  width: 100%;
+}*/
+
+.cat-text {
+  color: white;
+  font-size: 1.5em;
+  font-family: Raleway-bold;
+  font-weight: 500;
+  position: absolute;
+  text-shadow: 2px, 2px, 1px, rgba(0, 0, 0, 0.5);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+#lovely {
+  text-align: center;
+  margin-top: 4em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#lovely h3 {
+  font-family: Playfair Display-italic;
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+.products {
+  font-family: Playfair Display-bold;
+  font-weight: 500;
+}
+
+.subscribe {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/wave-bkgd.jpg');
+  height: 350px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 150px cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.subscribe h5 {
+  font-size: 2.5em;
+  font-family: Playfair Display-italic;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.update {
+  font-family: Playfair Display-bold;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.subscribe p {
+  font-size: 1.1em;
+  line-height: 2;
+  margin-top: 1em;
+  padding: 0 5%;
+}
+
+#foot {
+  height: 200px;
+  display: flex;
+  background-color: grey;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.foot-soc ul {
+  display: inline;
+}
+
+#foot a {
+  color: white;
+}
+
+#foot a:hover {
+  color: #b1574c;
+}
+
+.foot-head {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+/*Begin code for tablet screens*/
+@media (min-width: 600px){
+  body {
+    font-size: 16px;
+  }
+
+    #header {
+    z-index: 4;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: white;
+  }
+
+  .box-head {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    margin-top: -8px;
+  }
+
+  .icon {
+    left: 4%;
+    top: 50%;
+    transform: translate(0%, -25%)
+  }
+
+    .cart {
+    width: 5%;
+    min-width: 35px;
+    max-width: 40px;
+    right:10%;
+    top: 50%;
+    transform: translate(0, -20%);
+  }
+
+    .click {
+    width: 50%;
+    margin: 0 0 0 25%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    border:0;
+    bottom: 20%;
+  }
+}
+
+
+/*code for max-banner width end*/
+@media (min-width:620px) {
+  .banner-bg {
+    width: 100%;
+    background-image:  url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
+    height: 400px;
+    background-position: center bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: 120px, 100%;
+  }
+}
+
+/*begin code for desktop screens*/
+@media(min-width: 1240px){
+  #header {
+    z-index: 4;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    background-color: white;
+  }
+
+  .box-head {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    margin-top: -8px;
+  }
+
+    .icon {
+    left: 6%;
+    top: 29%;
+    transform: translate(0%, 0%);
+  }
+    .cart {
+    width: 15%;
+    min-width: 30px;
+    max-width: 34px;
+    z-index:0;
+    right:10%;
+    top: 50%;
+    transform: translate(0, -20%);
+  }
+    .banner-bg {
+    width: 100%;
+    background-image: url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
+    height: 510px;
+    background-position: center 50px, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: 20%, 70%;
+  }
+  .box {
+    position: relative;
+    height: 510px;
+    width: 100%;
+    z-index: 1;
+    background-color: #242424;
+    opacity: 0.3;
+  }
+}
