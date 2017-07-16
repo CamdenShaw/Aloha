@@ -172,8 +172,6 @@ a:hover {
 }
 
 #categories {
-  width: 400px;
-  height: 600px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -183,9 +181,12 @@ a:hover {
 }*/
 
 .rectangle-container {
-  width: 100%;
-  height: width;
-  flex-grow: 2;
+  width:100%;
+  padding-top: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 599px;
+  flex-basis: 100%;
 }
 
 .rectangle {
@@ -196,9 +197,10 @@ a:hover {
 
 .square {
   z-index:0;
-  padding-top: 100%;
   width: 50%;
   max-width: 298px;
+  padding-top: 22.5%;
+  padding-bottom: 22.5%;
 }
 
 .rectangle.one {
@@ -269,6 +271,8 @@ a:hover {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* .main-carousel { */
