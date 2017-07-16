@@ -174,33 +174,30 @@ a:hover {
 #categories {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 /*
 .t-image {
   width:100%;
 }*/
 
-.rectangle-container {
-  width:100%;
-  padding-top: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 599px;
-  flex-basis: 100%;
-}
+
+
 
 .rectangle {
   z-index: 0;
   width: 100%;
-  max-width: 599px;
+  flex-basis: 100%;
+  padding-top: 50%;
+  position: relative;
 }
 
 .square {
   z-index:0;
   width: 50%;
   max-width: 298px;
-  padding-top: 22.5%;
-  padding-bottom: 22.5%;
+  padding-top: 50%;
+  position: relative;
 }
 
 .rectangle.one {
@@ -273,6 +270,10 @@ a:hover {
   text-transform: uppercase;
   margin: 0px;
   padding: 0px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
 /* .main-carousel { */
