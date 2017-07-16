@@ -172,60 +172,150 @@ a:hover {
 }
 
 #categories {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
-
+/*
 .t-image {
   width:100%;
+}*/
+
+.rectangle-container {
+  width:100%;
+  padding-top: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 599px;
+  flex-basis: 100%;
 }
 
 .rectangle {
   z-index: 0;
   width: 100%;
   max-width: 599px;
-  position: relative;
 }
 
 .square {
   z-index:0;
   width: 50%;
-  max-width: 299.5px;
-  position: relative;
-  
+  max-width: 298px;
+  padding-top: 22.5%;
+  padding-bottom: 22.5%;
 }
 
 .rectangle.one {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/mens-category.jpg');
-  width: 100%;
-  height: 25%;
-  flex-shrink: 1;
-  background-position: center bottom;
+  background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 4px solid white;
 }
 
-/*.opacity {
-  background: rgba(0, 0, 0, 0.2);
-  position:absolute;
-  width: 100%;
-}*/
+.square.two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/trends-category.jpg');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 4px solid white;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  margin-left: -4px;
+}
+
+.square.three {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/glasses-category.jpg');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+  margin-right: -4px;
+}
+
+.square.four {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/sale-category.jpg');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 4px solid white;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  margin-left: -4px;
+}
+
+.square.five {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/bags-category.jpg');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+  margin-right: -4px;
+}
+
+.rectangle.six {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/womens-category.jpg');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 4px solid white;
+}
 
 .cat-text {
   color: white;
   font-size: 1.5em;
   font-family: Raleway-bold;
   font-weight: 500;
-  position: absolute;
-  text-shadow: 2px, 2px, 1px, rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
 }
+
+/* .main-carousel { */
+
+   /* aside {
+  width:fit-content;
+}  */
+
+.main-carousel {
+  margin-bottom: 100px;
+}
+
+.car-art {
+  width: 100%;
+  height: 600px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.car-pic {
+  width: 80%;
+  height: 80%;
+  left: 50%;;
+}
+
+.car-cat {
+  font-size: 10px;
+  color: grey;
+  text-transform: uppercase;
+  text-align: center;
+}
+.car-lab {
+  font-size: 21px;
+  color: red;
+  font-weight: 100;
+  text-align: center;
+}
+.car-dollas {
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+}
+
+
 
 #lovely {
   text-align: center;

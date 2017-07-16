@@ -5,15 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name='viewport' content='width=device-width' initial-scale=1>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link type='text/css' rel='stylsheet' href='css/normalize.css'>
   <link type='text/css' rel='stylesheet' href='fonts/stylesheet.css'>
   <link type='text/css' rel='stylesheet' href='css/style.css'>
   <title>Aloha!</title>
 </head>
-<body>
-  
-</body>
-</html>
   <body>
     <h1 class='hi'>Aloha!</h1>
     <!--imputing the elements and assets for the header to be adjusted later in CSS-->
@@ -54,29 +51,31 @@
       <p>Aloha Apparel Co. Sells only the finest ready-to-travel clothing.  Browse our current selection of production or sign-up for updates below.</p>
     </section>
     <section id='categories'>
-      <div class='rectangle one'>
-        <!--<img class='t-image' src='images/mens-category.jpg'>-->
-        <div class='opacity'></div>
-        <p class='cat-text'>Men's</p>
-      </div>
+      <element class='rectangle-container'>
+        <div class='rectangle one'>
+          <!--<img class='t-image' src='images/mens-category.jpg'>-->
+          <!--<div class='opacity'></div>-->
+          <p class='cat-text'>Men's</p>
+        </div>
+      </element>
       <div class='square two'>
-        <img class='t-image' src='images/trends-category.jpg'/>
+        <!--<img class='t-image' src='images/trends-category.jpg'/>-->
         <p class='cat-text'>Trends</p>
       </div>
       <div class='square three'>
-        <img class='t-image' src='images/glasses-category.jpg'/>
+        <!--<img class='t-image' src='images/glasses-category.jpg'/>-->
         <p class='cat-text'>Glasses</p>
       </div>
       <div class='square four'>
-        <img class='t-image' src='images/sale-category.jpg'/>
+        <!--<img class='t-image' src='images/sale-category.jpg'/>-->
         <p class='cat-text'>Sale</p>
       </div>
       <div class='square five'>
-        <img class='t-image' src='images/bags-category.jpg'/>
+        <!--<img class='t-image' src='images/bags-category.jpg'/>-->
         <p class='cat-text'>Bags</p>
       </div>
       <div class='rectangle six'>
-        <img class='t-image' src='images/womens-category.jpg'/>
+        <!--<img class='t-image' src='images/womens-category.jpg'/>-->
         <p class='cat-text'>Women's</p>
       </div>
     </section>
@@ -84,71 +83,72 @@
       <h3>Most-Loved <span class='products'>Products</span></h3>
     </section>
   <!--inputting elements and assets for the carousel to be modified later in CSS-->
-    <section>
-      <article class='carArt'>
+    <section class='main-carousel' data-flickety='{"freescroll:" true, "prevNextButton:" false, "groupCells:" 80%}'>
+      <article class='car-art'>
         <aside>
-          <img class='carPic' src='images/stretch-knit-dress.jpg'/>
+          <img class='car-pic' src='images/stretch-knit-dress.jpg'/>
         </aside>
-        <h4 class='car_cat'>dresses</h4>
-        <p class='car_lab'>Stretch Knit Dresses</p>
-        <p class='car_dollas'>$ 169.00</p>
+        <p class='car-cat'>dresses</h4>
+        <h4 class='car-lab'>Stretch Knit Dresses</p>
+        <p class='car-dollas'>$ 169.00</p>
       </article>
-      <article class='carArt'>
+      <article class='car-art'>
         <aside>
-          <img class='carPic' src='images/cotton-blue-shirt.jpg'/>
+          <img class='car-pic' src='images/cotton-blue-shirt.jpg'/>
         </aside>
-        <h4 class='car_cat'>shirts</h4>
-        <p class='car_lab'>Cotton Blue Shirts</p>
-        <p class='car_dollas'>$ 89.00</p>
+        <p class='car-cat'>shirts</h4>
+        <h4 class='car-lab'>Cotton Blue Shirts</p>
+        <p class='car-dollas'>$ 89.00</p>
       </article>
-      <article class='carArt'>
+      <article class='car-art'>
         <aside>
-          <img class='carPic' src='images/checked-stretch-dress.jpg'/>
+          <img class='car-pic' src='images/checked-stretch-dress.jpg'/>
         </aside>
-        <h4 class='car_cat'>dresses</h4>
-        <p class='car_lab'>Checked Stretch Dress</p>
-        <p class='car_dollas'>$ 129.00</p>
+        <p class='car-cat'>dresses</h4>
+        <h4 class='car-lab'>Checked Stretch Dress</p>
+        <p class='car-dollas'>$ 129.00</p>
       </article>
-      <article class='carArt'>
+      <article class='car-art'>
         <aside>
-          <img class='carPic' src='images/blue-hipster-backpack.jpg'/>
+          <img class='car-pic' src='images/blue-hipster-backpack.jpg'/>
         </aside>
-        <h4 class='car_cat'>bags</h4>
-        <p class='car_lab'>Blue Hipster Backpack</p>
-        <p class='car_dollas'>$ 69.00</p>
+        <p class='car-cat'>bags</h4>
+        <h4 class='car-lab'>Blue Hipster Backpack</p>
+        <p class='car-dollas'>$ 69.00</p>
       </article>
-      <article class='carArt'>
+      <article class='car-art'>
         <aside>
-          <img class='carPic' src='images/demin-overall-shorts.jpg'/>
+          <img class='car-pic' src='images/demin-overall-shorts.jpg'/>
         </aside>
-        <h4 class='car_cat'>demin</h4>
-        <p class='car_lab'>Demin Overall Shorts</p>
-        <p class='car_dollas'>$ 89.00</p>
+        <p class='car-cat'>demin</h4>
+        <h4 class='car-lab'>Demin Overall Shorts</p>
+        <p class='car-dollas'>$ 89.00</p>
       </article>
-      <article class='carArt'>
+      <article class='car-art'>
         <aside>
-          <img class='carPic' src='images/pink-dotted-dress.jpg'/>
+          <img class='car-pic' src='images/pink-dotted-dress.jpg'/>
         </aside>
-        <h4 class='car_cat'>dresses</h4>
-        <p class='car_lab'>Pink Dotted Dress</p>
-        <p class='car_dollas'>$ 99.00</p>
+        <p class='car-cat'>dresses</h4>
+        <h4 class='car-lab'>Pink Dotted Dress</p>
+        <p class='car-dollas'>$ 99.00</p>
       </article>
-      <article class='carArt'>
+      <article class='car-art'>
         <aside>
-          <img class='carPic' src='images/blue-silk-dress.jpg'/>
+          <img class='car-pic' src='images/blue-silk-dress.jpg'/>
         </aside>
-        <h4 class='car_cat'>dresses</h4>
-        <p class='car_lab'>Blue Silk Dress</p>
-        <p class='car_dollas'>$ 119.00</p>
+        <h4 class='car-cat'>dresses</h4>
+        <p class='car-lab'>Blue Silk Dress</p>
+        <p class='car-dollas'>$ 119.00</p>
       </article>
-      <article class='carArt'>
+      <article class='car-art'>
         <aside>
-          <img class='carPic' src='images/cotton-yellow-tshirt.jpg'/>
+          <img class='car-pic' src='images/cotton-yellow-tshirt.jpg'/>
         </aside>
-        <h4 class='car_cat'>shirts</h4>
-        <p class='carLab'>Cotton Yellow Shirt</p>
-        <p class='car_dollas'>$ 39.00</p>
+        <h4 class='car-cat'>shirts</h4>
+        <p class='car-lab'>Cotton Yellow Shirt</p>
+        <p class='car-dollas'>$ 39.00</p>
       </article>
+    </section>
       <section class='subscribe'>
         <h5>Sign-up for <span class='update'>Updates</span></h5>
         <p class='newsletter'>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog.  Unsubscribe at any time.</p>
@@ -177,5 +177,10 @@
             <li><img src='' alt='google+' title='google+' text='google+'/></li>
           </ul>
     </footer>
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type='text/javascript' src='js/perkyScript.js'></script>
   </body>
 </html>
