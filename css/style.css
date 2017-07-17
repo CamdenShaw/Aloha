@@ -394,12 +394,16 @@ a:hover {
 }
 
 #foot {
-  height: 200px;
+  align-content: center;
+  height: 300px;
   display: flex;
   background-color: #242424;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   color: white;
+  margin-top: 10px;
+  padding-top: 20px;
   width: 100%;
 }
 
@@ -418,7 +422,7 @@ a:hover {
 
 .foot-li {
   display: inline;
-  padding: 5px;
+  padding: 10px;
 }
 
 .foot-add {
@@ -430,6 +434,7 @@ a:hover {
 
 #foot a {
   color: white;
+  text-decoration: underline;
 }
 
 #foot a:hover {
@@ -437,9 +442,25 @@ a:hover {
 }
 
 .foot-head {
-  margin: 0;
-  width: 100%;
+  display: block;
+  margin:8px;
   text-align: center;
+  line-height: 0;
+  font-size: 1em;
+  width: 91%;
+}
+.foot-head.cc {
+  padding-top: 40px;
+  width: 16%;
+  margin-bottom: 40px;
+}
+
+.foot-head .hide {
+  display: none;
+}
+
+.foot-li span {
+  display: none;
 }
 
 
