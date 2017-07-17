@@ -435,6 +435,8 @@ a:hover {
 #foot a {
   color: white;
   text-decoration: underline;
+  font-family: 'Playfair Display-bold';
+  font-weight: 700;
 }
 
 #foot a:hover {
@@ -451,8 +453,11 @@ a:hover {
 }
 .foot-head.cc {
   padding-top: 40px;
-  width: 16%;
+  width: 102px;
   margin-bottom: 40px;
+  font-size: 1.1em;
+  margin-left: -35px;
+  padding-right: 35px;
 }
 
 .foot-head .hide {
