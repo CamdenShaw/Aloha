@@ -2,8 +2,12 @@
 body {
   margin: 0px;
   font-size: 14px;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: pink;
+}
+
+.hi {
+  display: none;
 }
 
 header {
@@ -11,12 +15,12 @@ header {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Playfair-Display, sans-serif;
+  font-family: 'Playfair-Display', sans-serif;
 }
 
 a {
   color: #e2574c;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
 }
 
@@ -36,12 +40,6 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.hi {
-  z-index: 0;
-  position: relative;
-  margin-top: -56px;
 }
 
 .icon-box {
@@ -76,6 +74,7 @@ a:hover {
   padding: 11px;
   justify-content: center;
 }
+
 .click {
   align-items: center;
   justify-content: center;
@@ -85,14 +84,14 @@ a:hover {
 .clack {
   display: inline;
   font-size: 13px;
-  font-family: Raleway-bold, sans-serif(bold);
+  font-family: 'Raleway-bold', sans-serif;
   font-weight: 700;
   padding: 10px;
   text-transform: uppercase; 
 }
 
 #banner {
-  margin-top: 120px;
+  padding-top: 110px;
   width: 100%;
   display: flex;
 }
@@ -476,43 +475,101 @@ a:hover {
   }
 
     #header {
-    z-index: 4;
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    background-color: white;
+      height: 90px;
   }
 
   .box-head {
-    width: 100%;
-    height: 80px;
-    position: relative;
-    margin-top: -8px;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+
+  .icon-box {
+    width: 120px;
+    padding-top: 10px;
   }
 
   .icon {
-    left: 4%;
-    top: 50%;
-    transform: translate(0%, -25%)
+    width: 100%;
   }
 
-    .cart {
-    width: 5%;
-    min-width: 35px;
-    max-width: 40px;
-    right:10%;
-    top: 50%;
-    transform: translate(0, -20%);
+  .cart-box{
+    order: 3;
+    width: 50px;
+    padding: 8px;
+    padding-right: 6px;
   }
 
-    .click {
-    width: 50%;
-    margin: 0 0 0 25%;
-    position: absolute;
-    text-align: center;
-    z-index: 1;
-    border:0;
-    bottom: 20%;
+  .click-box {
+    border: 0;
+    order: 2;
+    width: 70%;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .click {
+    padding: 0;
+    display: flex;
+  }
+
+  .clack {
+    padding: 5%;
+    font-size: 0.9em;
+  }
+
+  #banner {
+    padding-top: 90px;
+  }
+
+  .banner-text p{
+    font-size: 1.25em;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .banner-text h2 {
+    font-size: 3em;
+  }
+
+  .rectangle {
+    flex-basis: 50%;
+    padding-top: 25%;
+  }
+
+  .square {
+    flex-basis: 25%;
+    padding-top: 25%;
+  }
+
+  .rectangle.one {
+    border-right: 4px solid white;
+  }
+
+  .square.two {
+    border-top: 0px solid white;
+    border-left: 4px solid white;
+    border-right: 0px solid white;
+  }
+
+  .square.three {
+    border-top: 0px solid white;
+    border-left: 8px solid white;
+  }
+
+  .square.four {
+    border-bottom: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 8px solid white;
+  }
+
+  .square-five {
+    border-bottom: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 4px solid white;
+  }
+
+  .rectangle.six {
+    border-left: 8px solid white;
   }
 }
 
