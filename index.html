@@ -51,40 +51,38 @@
       <p>Aloha Apparel Co. Sells only the finest ready-to-travel clothing.  Browse our current selection of production or sign-up for updates below.</p>
     </section>
     <section id='categories'>
-
         <div class='rectangle one'>
           <!--<img class='t-image' src='images/mens-category.jpg'>-->
           <!--<div class='opacity'></div>-->
-          <p class='cat-text'>Men's</p>
+          <p class='cat-text'><a  href='#'>Men's</a></p>
         </div>
-
       <div class='square two'>
         <!--<img class='t-image' src='images/trends-category.jpg'/>-->
-        <p class='cat-text'>Trends</p>
+        <p class='cat-text'><a  href='#'>Trends</a></p>
       </div>
       <div class='square three'>
         <!--<img class='t-image' src='images/glasses-category.jpg'/>-->
-        <p class='cat-text'>Glasses</p>
+        <p class='cat-text'><a  href='#'>Glasses</a></p>
       </div>
       <div class='square four'>
         <!--<img class='t-image' src='images/sale-category.jpg'/>-->
-        <p class='cat-text'>Sale</p>
+        <p class='cat-text'><a  href='#'>Sale</a></p>
       </div>
       <div class='square five'>
         <!--<img class='t-image' src='images/bags-category.jpg'/>-->
-        <p class='cat-text'>Bags</p>
+        <p class='cat-text'><a  href='#'>Bags</a></p>
       </div>
       <div class='rectangle six'>
         <!--<img class='t-image' src='images/womens-category.jpg'/>-->
-        <p class='cat-text'>Women's</p>
+        <p class='cat-text'><a  href='#'>Women's</a></p>
       </div>
     </section>
     <section id='lovely'>
       <h3>Most-Loved <span class='products'>Products</span></h3>
     </section>
   <!--inputting elements and assets for the carousel to be modified later in CSS-->
-    <section class='main-carousel' data-flickety='{"freescroll:" true, "prevNextButton:" false, "groupCells:" 80%}'>
-      <article class='car-art'>
+    <section class='main-carousel' data-flickity='{ "cellSelector": ".carousel-cell", "prevNextButton": false, "groupCells": 80%, "autoPlay": true }'>
+      <article class='carousel-cell'>
         <aside>
           <img class='car-pic' src='images/stretch-knit-dress.jpg'/>
         </aside>
@@ -92,7 +90,7 @@
         <h4 class='car-lab'>Stretch Knit Dresses</p>
         <p class='car-dollas'>$ 169.00</p>
       </article>
-      <article class='car-art'>
+      <article class='carousel-cell'>
         <aside>
           <img class='car-pic' src='images/cotton-blue-shirt.jpg'/>
         </aside>
@@ -100,7 +98,7 @@
         <h4 class='car-lab'>Cotton Blue Shirts</p>
         <p class='car-dollas'>$ 89.00</p>
       </article>
-      <article class='car-art'>
+      <article class='carousel-cell'>
         <aside>
           <img class='car-pic' src='images/checked-stretch-dress.jpg'/>
         </aside>
@@ -108,7 +106,7 @@
         <h4 class='car-lab'>Checked Stretch Dress</p>
         <p class='car-dollas'>$ 129.00</p>
       </article>
-      <article class='car-art'>
+      <article class='carousel-cell'>
         <aside>
           <img class='car-pic' src='images/blue-hipster-backpack.jpg'/>
         </aside>
@@ -116,7 +114,7 @@
         <h4 class='car-lab'>Blue Hipster Backpack</p>
         <p class='car-dollas'>$ 69.00</p>
       </article>
-      <article class='car-art'>
+      <article class='carousel-cell'>
         <aside>
           <img class='car-pic' src='images/demin-overall-shorts.jpg'/>
         </aside>
@@ -124,7 +122,7 @@
         <h4 class='car-lab'>Demin Overall Shorts</p>
         <p class='car-dollas'>$ 89.00</p>
       </article>
-      <article class='car-art'>
+      <article class='carousel-cell'>
         <aside>
           <img class='car-pic' src='images/pink-dotted-dress.jpg'/>
         </aside>
@@ -132,7 +130,7 @@
         <h4 class='car-lab'>Pink Dotted Dress</p>
         <p class='car-dollas'>$ 99.00</p>
       </article>
-      <article class='car-art'>
+      <article class='carousel-cell'>
         <aside>
           <img class='car-pic' src='images/blue-silk-dress.jpg'/>
         </aside>
@@ -140,7 +138,7 @@
         <h4 class='car-lab'>Blue Silk Dress</h4>
         <p class='car-dollas aa'>$ 119.00</p>
       </article>
-      <article class='car-art'>
+      <article class='carousel-cell'>
         <aside>
           <img class='car-pic' src='images/cotton-yellow-tshirt.jpg'/>
         </aside>
@@ -149,17 +147,16 @@
         <p class='car-dollas aa'>$ 39.00</p>
       </article>
     </section>
-      <section class='subscribe'>
-        <h5>Sign-up for <span class='update'>Updates</span></h5>
-        <p class='newsletter'>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog.  Unsubscribe at any time.</p>
-        <form action='submit.php' method='post'>
-          <label id='email'>
-            your email
-            <input for='email' type='text' name='email' size='12' maxlength='50' />
-          </label>
-          <button type='submit'>Submit</button>
-        </form>
-      </section>
+    <section class='subscribe'>
+      <h5>Sign-up for <span class='update'>Updates</span></h5>
+      <p class='newsletter'>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog.  Unsubscribe at any time.</p>
+      <form action='submit.php' method='post'>
+        <label id='email'>
+          your email
+          <input for='email' type='text' name='email' size='12' maxlength='50' class='email'/>
+        </label>
+        <button type='submit'>Submit</button>
+      </form>
     </section>
     <footer>
       <article id='foot'>
@@ -169,12 +166,12 @@
         <h6 class='foot-head'>email: <a href='mailto:info@alohaaparrel.com'>info@alohaapparel.com</a></h6>
         <p class='foot-add'>1490 W Broadway</br>Vancouver, BC, Canada
         <aside class='foot-soc'>
-          <ul>
-            <li><img src='' alt='fb' title='facebook' text='facebook'/></li>
-            <li><img src='' alt='tweet' title='twitter' text='twitter'/></li>
-            <li><img src='' alt='instagram' title='instagram' text='instagram'/></li>
-            <li><img src='' alt='pinterest' title='pinterest' text='pinterest'/></li>
-            <li><img src='' alt='google+' title='google+' text='google+'/></li>
+          <ul class='foot-list'>
+            <li class='foot-li'><img src='' alt='fb' title='facebook' text='facebook'/></li>
+            <li class='foot-li'><img src='' alt='tweet' title='twitter' text='twitter'/></li>
+            <li class='foot-li'><img src='' alt='instagram' title='instagram' text='instagram'/></li>
+            <li class='foot-li'><img src='' alt='pinterest' title='pinterest' text='pinterest'/></li>
+            <li class='foot-li'><img src='' alt='google+' title='google+' text='google+'/></li>
           </ul>
     </footer>
         <script src="http://code.jquery.com/jquery-3.2.1.min.js"
