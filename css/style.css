@@ -3,7 +3,7 @@ body {
   margin: 0px;
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
-  background-color: pink;
+  background-color: white;
 }
 
 .hi {
@@ -365,7 +365,7 @@ a:hover {
 }
 
 
-.subscribe {
+#subscribe {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/wave-bkgd.jpg');
   height: 350px;
   background-position: center bottom;
@@ -380,7 +380,7 @@ a:hover {
   color: white;
 }
 
-.subscribe h5 {
+#subscribe h5 {
   font-size: 2.5em;
   font-family: Playfair Display-italic;
   font-weight: 300;
@@ -395,7 +395,7 @@ a:hover {
   margin-top: 0;
 }
 
-.subscribe p {
+#subscribe p {
   display: inline-block;
   font-size: 1.1em;
   line-height: 2;
@@ -499,7 +499,7 @@ a:hover {
   }
 
   .icon-box {
-    width: 120px;
+    width: 15%;
     padding-top: 10px;
   }
 
@@ -509,7 +509,7 @@ a:hover {
 
   .cart-box{
     order: 3;
-    width: 50px;
+    width: 15%;
     padding: 8px;
     padding-right: 6px;
   }
@@ -616,7 +616,7 @@ a:hover {
     font-size: 1.05em;
   }
 
-  .subscribe p {
+  #subscribe p {
     font-size: 1.15em;
     padding: 0 2%;
   }
@@ -700,7 +700,7 @@ a:hover {
 }
 
 @media (min-width: 720px) {
-  .subscribe p {
+  #subscribe p {
     align-self: center;
     max-width: 710px;
   }
@@ -763,8 +763,8 @@ a:hover {
     transform: translate(-2.5%, 0);
   }
   
-  .fot-soc {
-    width: 5%;
+  .foot-soc {
+    width: 10%;
   }
 
 }
