@@ -130,7 +130,7 @@ a:hover {
 
 .banner-text p {
   text-transform: uppercase;
-  font-family: Raleway-bold, sans-serif;
+  font-family: 'Raleway-bold', sans-serif;
   flex-basis: 100%;
   font-size: 18px;
   font-weight: 500;
@@ -139,10 +139,11 @@ a:hover {
 
 .banner-text h2 {
   font-size: 35px;
-  flex-basis: 100%;
+  flex-basis: 76%;
   font-weight: 300;
   margin: 0px;
   z-index: 0;
+  line-height: 0.9;
 }
 
 #handy {
@@ -168,6 +169,7 @@ a:hover {
   font-size: 1.1em;
   line-height: 2;
   margin-top: 1em;
+  margin-bottom: 60px;
 }
 
 #categories {
@@ -413,6 +415,27 @@ a:hover {
   width: 100%;
 }
 
+.foot-head {
+  display: block;
+  margin:8px;
+  text-align: center;
+  line-height: 0;
+  font-size: 1em;
+  width: 91%;
+}
+.foot-head.cc {
+  padding-top: 40px;
+  width: 102px;
+  margin-bottom: 40px;
+  font-size: 1.1em;
+  margin-left: -35px;
+  padding-right: 35px;
+}
+
+.foot-head .hide {
+  display: none;
+}
+
 .foot-soc {
   width: 100%;
   padding: 0;
@@ -452,26 +475,7 @@ a:hover {
   color: #b1574c;
 }
 
-.foot-head {
-  display: block;
-  margin:8px;
-  text-align: center;
-  line-height: 0;
-  font-size: 1em;
-  width: 91%;
-}
-.foot-head.cc {
-  padding-top: 40px;
-  width: 102px;
-  margin-bottom: 40px;
-  font-size: 1.1em;
-  margin-left: -35px;
-  padding-right: 35px;
-}
 
-.foot-head .hide {
-  display: none;
-}
 
 
 
@@ -527,6 +531,10 @@ a:hover {
 
   #banner {
     padding-top: 90px;
+  }
+
+  .banner-bg {
+    background-size: 150px, cover;
   }
 
   .banner-text p{
@@ -585,8 +593,8 @@ a:hover {
   }
 
   .car-pic {
-    transform: translate(5%,0%);
-    width: 70%;
+    transform: translate(11%,0%);
+    width: 65%;
   }
 
   .car-cat {
@@ -602,23 +610,77 @@ a:hover {
   }
 
   .subscribe p {
-    font-size: 1.2em;
+    font-size: 1.15em;
     padding: 0 2%;
   }
 
   #foot {
-  align-content: space-between;
-  flex-direction: column;
-  margin: 5px;
-  padding: 5px;
-  justify-content: space-between;
+    flex-direction: column;
+    height: 200px;
+    padding: 50px 0px;
+    align-content: space-around;
+  }
+
+  .foot-head {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 16px;
+    display: block;
+    order: 1;
+    font-size: 0.9em;
+    width: 60%;
+  }
+
+  .foot-head.cc {
+    width: 60%;
+    margin: 0;
+    font-size: 0.9em;
+    padding: 16px 0 0 0;
+  }
+  .foot-head .hide {
+    display: inline;
+  }
+
+  .foot-add {
+    width: 60%;
+    text-align: left;
+    padding: 0;
+    margin: 40px 0 0 0;
+    order: 2;
+    font-size: 0.9em;
   }
 
   .foot-soc {
-    width: 40%;
-    height: 20px;
+    width: 20%;
+    height: 300px;
     order: 3;
+    padding:0;
   }
+
+  .foot-list {
+    display: block;
+    justify-content: left;
+    text-align: left;
+    padding:0;
+  }
+
+  .foot-li {
+    display: list-item;
+    list-style-type: none;
+    align-self: left;
+    padding: 5px 0 6px 0;
+  }
+
+  .foot-li span {
+    display: inline;
+    font-family: 'Raleway';
+    font-weight: 400;
+  }
+
+  #foot .foot-li a {
+    text-decoration: none;
+  }
+
 
 }
 
@@ -626,12 +688,7 @@ a:hover {
 /*code for max-banner width end*/
 @media (min-width:620px) {
   .banner-bg {
-    width: 100%;
-    background-image:  url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
-    height: 400px;
-    background-position: center bottom, left top;
     background-repeat: no-repeat, repeat;
-    background-size: 120px, 100%;
   }
 }
 
