@@ -147,6 +147,8 @@ a:hover {
 }
 
 #handy {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   z-index: 3;
   margin-top: 4em;
@@ -157,6 +159,7 @@ a:hover {
 #handy h3 {
   font-family: Playfair Display-bold;
   font-size: 2.5em;
+  width: 100%;
   margin-bottom: 0;
 }
 
@@ -197,7 +200,6 @@ a:hover {
 .square {
   z-index:0;
   width: 50%;
-  max-width: 298px;
   padding-top: 50%;
   position: relative;
   box-sizing: border-box;
@@ -423,6 +425,7 @@ a:hover {
   font-size: 1em;
   width: 91%;
 }
+
 .foot-head.cc {
   padding-top: 40px;
   width: 102px;
@@ -547,6 +550,10 @@ a:hover {
     font-size: 3em;
   }
 
+  #handy p {
+    font-size: 1.11em;
+  }
+
   .rectangle {
     flex-basis: 50%;
     padding-top: 25%;
@@ -642,7 +649,7 @@ a:hover {
   }
 
   .foot-add {
-    width: 60%;
+    width: 75%;
     text-align: left;
     padding: 0;
     margin: 40px 0 0 0;
@@ -651,7 +658,7 @@ a:hover {
   }
 
   .foot-soc {
-    width: 20%;
+    width: 15%;
     height: 300px;
     order: 3;
     padding:0;
@@ -694,57 +701,70 @@ a:hover {
 
 @media (min-width: 720px) {
   .subscribe p {
+    align-self: center;
+    max-width: 710px;
+  }
+}
+
+@media (min-width: 827px) {
+  #handy p {
     left: 50%;
     align-self: center;
-    max-width: 720px;
+    max-width: 650px;
   }
 }
 
 /*begin code for desktop screens*/
 @media(min-width: 1240px){
-  #header {
-    z-index: 4;
-    width: 100%;
-    height: 90px;
-    position: fixed;
-    background-color: white;
-  }
 
-  .box-head {
-    width: 100%;
-    height: 90px;
-    position: relative;
-    margin-top: -8px;
+  .icon-box {
+    width: 15%;
   }
 
     .icon {
-    left: 6%;
-    top: 29%;
-    transform: translate(0%, 0%);
+      width: 160px;
+      height: 60px;
   }
-    .cart {
-    width: 15%;
-    min-width: 30px;
-    max-width: 34px;
-    z-index:0;
-    right:10%;
-    top: 50%;
-    transform: translate(0, -20%);
+
+    .cart-box {
+      width: 15%;
+      height: 60px;
   }
-    .banner-bg {
-    width: 100%;
-    background-image: url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
+
+  .cart {
+    width: 60px;
+    height: 60px;
+  }
+
+  .clack {
+    padding: 5%;
+    font-size: 0.95em;
+    font-weight: 700;
+  }
+
+  .banner-bg {
     height: 510px;
-    background-position: center 50px, left top;
+    width: 100%;
+    background-position: center 60px, center top;
     background-repeat: no-repeat, repeat;
-    background-size: 20%, 70%;
+    background-size: 250px, contain;
   }
-  .box {
-    position: relative;
+
+  .banner-text-box {
     height: 510px;
-    width: 100%;
-    z-index: 1;
-    background-color: #242424;
-    opacity: 0.3;
   }
+
+  .carousel-cell {
+    width: 25%;
+  }
+
+  .car-pic {
+    width: 85%;
+    transform: translate(-2.5%, 0);
+  }
+  
+  .fot-soc {
+    width: 5%;
+  }
+
 }
