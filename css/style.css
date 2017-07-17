@@ -310,7 +310,7 @@ a:hover {
 
 .carousel-cell {
   width: 100%;
-  height: 600px;
+  height: auto;
   transform: translate(9.5%,0%); 
   margin-right: 10px;
   border-radius: 5px;
@@ -318,13 +318,15 @@ a:hover {
 
 .car-pic {
   width: 80%;
-  height: 80%;
+  height: auto%;
   left: 50%;
   transform: translate(0.5%,0%);
 }
 
 .car-cat {
   font-size: 10px;
+  font-weight: 600;
+  font-family: 'Raleway-bold';
   color: #969696;
   text-transform: uppercase;
   text-align: center;
@@ -345,13 +347,17 @@ a:hover {
 .car-dollas {
   font-size: 14px;
   color: #969696;
+  font-family: 'Raleway-bold';
+  font-weight: 500;
   text-align: center;
   margin-top: 0px;
 }
-.car-dollas.aa{
+.car-dollas.cc{
   transform: translate(-9.5%,0%); 
   margin-top: 24px;
-  font-weight: 700;
+  font-family: 'Raleway-bold';
+  font-weight: 500;
+  margin-bottom: 60px;
 }
 
 
@@ -386,6 +392,7 @@ a:hover {
 }
 
 .subscribe p {
+  display: inline-block;
   font-size: 1.1em;
   line-height: 2;
   margin-top: 1em;
@@ -394,13 +401,13 @@ a:hover {
 
 #foot {
   align-content: center;
-  height: 300px;
-  display: flex;
   background-color: #242424;
+  color: white;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: 300px;
   justify-content: center;
-  color: white;
   margin-top: 10px;
   padding-top: 20px;
   width: 100%;
@@ -411,17 +418,20 @@ a:hover {
   padding: 0;
 }
 
-.foot-list {
+ .foot-list {
   display: flex;
   align-content: center;
   justify-content: center;
   width: 100%;
   padding: 0;
-}
+} 
 
 .foot-li {
   display: inline;
   padding: 10px;
+}
+.foot-li span {
+  display: none;
 }
 
 .foot-add {
@@ -463,9 +473,7 @@ a:hover {
   display: none;
 }
 
-.foot-li span {
-  display: none;
-}
+
 
 
 /*Begin code for tablet screens*/
@@ -562,15 +570,56 @@ a:hover {
     border-right: 8px solid white;
   }
 
-  .square-five {
+  .square.five {
     border-bottom: 0px solid white;
     border-left: 0px solid white;
     border-right: 4px solid white;
   }
 
   .rectangle.six {
-    border-left: 8px solid white;
+    border-left: 4px solid white;
   }
+
+  .carousel-cell {
+    width:50%;
+  }
+
+  .car-pic {
+    transform: translate(5%,0%);
+    width: 70%;
+  }
+
+  .car-cat {
+    font-size: 0.75em;
+    font-weight: 600;
+  }
+
+  .car-dollas {
+    font-size: 0.8em;
+  }
+  .car-dollas.cc {
+    font-size: 1.05em;
+  }
+
+  .subscribe p {
+    font-size: 1.2em;
+    padding: 0 2%;
+  }
+
+  #foot {
+  align-content: space-between;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  justify-content: space-between;
+  }
+
+  .foot-soc {
+    width: 40%;
+    height: 20px;
+    order: 3;
+  }
+
 }
 
 
@@ -583,6 +632,14 @@ a:hover {
     background-position: center bottom, left top;
     background-repeat: no-repeat, repeat;
     background-size: 120px, 100%;
+  }
+}
+
+@media (min-width: 720px) {
+  .subscribe p {
+    left: 50%;
+    align-self: center;
+    max-width: 720px;
   }
 }
 
