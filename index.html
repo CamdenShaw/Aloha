@@ -1,18 +1,32 @@
+<!--doctype html5-->
 <!DOCTYPE html>
+<!-- language is english -->
 <html lang="en">
+  <!-- begin invisible head -->
 <head>
+  <!-- charset to 8 pixels -->
   <meta charset="UTF-8">
+  <!-- grab width of device -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- adjust for compatability with internet explorer edge -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name='viewport' content='width=device-width' initial-scale=1>
+  <!-- link to flickity stylesheet -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- link to reset stylesheet -->
   <link type='text/css' rel='stylsheet' href='css/normalize.css'>
+  <!-- link to raleway and playfair stylesheet -->
   <link type='text/css' rel='stylesheet' href='fonts/stylesheet.css'>
+  <!-- link to css stylesheet for the html -->
   <link type='text/css' rel='stylesheet' href='css/style.css'>
+  <!-- link to font-awseome (social media logos) stylesheet -->
   <link type='text/css' rel='stylesheet' href='font-awesome-4.7.0/css/font-awesome.css'>
+  <!-- the most creative title for this project you have ever seen -->
   <title>Aloha!</title>
+  <!-- end of invisible head -->
 </head>
+<!-- beginning of bone-structure -->
   <body>
+    <!-- invisible title, present for Google search algorithms -->
     <h1 class='hi'>Aloha!</h1>
     <!--imputing the elements and assets for the header to be adjusted later in CSS-->
     <header>
@@ -40,6 +54,7 @@
         <!--banner foreground-->
         <div class='banner-text-box'>
           <div class='banner-text'>
+            <!-- banner text -->
             <p class='collection'>New Collection</p>
             <h2 class='season'>Spring/Summer 2017</h2>
           </div>
@@ -51,43 +66,41 @@
       <h3><span class='handy'>Hand Crafted </span>Styles</h3>
       <p>Aloha Apparel Co. Sells only the finest ready-to-travel clothing.  Browse our current selection of production or sign-up for updates below.</p>
     </section>
+    <!-- beginning consctruction of grid -->
     <section id='categories'>
+      <!-- giving shapes two classes, one to share, one to select individually with ease -->
         <div class='rectangle one'>
-          <!--<img class='t-image' src='images/mens-category.jpg'>-->
-          <!--<div class='opacity'></div>-->
           <p class='cat-text'><a  href='#'>Men's</a></p>
         </div>
       <div class='square two'>
-        <!--<img class='t-image' src='images/trends-category.jpg'/>-->
         <p class='cat-text'><a  href='#'>Trends</a></p>
       </div>
       <div class='square three'>
-        <!--<img class='t-image' src='images/glasses-category.jpg'/>-->
         <p class='cat-text'><a  href='#'>Glasses</a></p>
       </div>
       <div class='square four'>
-        <!--<img class='t-image' src='images/sale-category.jpg'/>-->
         <p class='cat-text'><a  href='#'>Sale</a></p>
       </div>
       <div class='square five'>
-        <!--<img class='t-image' src='images/bags-category.jpg'/>-->
         <p class='cat-text'><a  href='#'>Bags</a></p>
       </div>
       <div class='rectangle six'>
-        <!--<img class='t-image' src='images/womens-category.jpg'/>-->
         <p class='cat-text'><a  href='#'>Women's</a></p>
       </div>
     </section>
     <section id='lovely'>
       <h3>Most-Loved <span class='products'>Products</span></h3>
     </section>
-  <!--inputting elements and assets for the carousel to be modified later in CSS-->
+  <!--inputting elements and assets for the carousel to be modified later in CSS and java script-->
     <section class='main-carousel'>
       <article class='carousel-cell'>
+        <!-- aside for the image -->
         <aside>
           <img class='car-pic' src='images/stretch-knit-dress.jpg'/>
         </aside>
+        <!-- two paragraphs for category and price -->
         <p class='car-cat'>dresses</h4>
+          <!-- one header for the label -->
         <h4 class='car-lab'>Stretch Knit Dresses</p>
         <p class='car-dollas'>$ 169.00</p>
       </article>
@@ -148,23 +161,35 @@
         <p class='car-dollas cc'>$ 39.00</p>
       </article>
     </section>
+    <!-- inputting elements for the newsletter subscriptiong to be modified later in css and javascript -->
     <section id='subscribe'>
       <h5>Sign-up for <span class='update'>Updates</span></h5>
       <p class='newsletter'>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog.  Unsubscribe at any time.</p>
-      <form action='' method='post'>
-        <input for='email' type='text' name='email' size='12' maxlength='80' class='email' placeholder='Your Email'/>
-        <button class='submit' type='submit' onclick='myFunction()'>Subscribe</button>
+      <!-- beginning of form for subscribing -->
+      <form name='newsletter' action='form.php' onsubmit='return validateForm();' method='post'>
+        <!-- text field -->
+        <input type='text' name='email' maxlength='80' class='email' placeholder='Your Email'/>
+        <!-- button -->
+        <input class='submit' type='submit' value='Submit' placeholder='Subscribe'/>
       </form>
     </section>
+    <!-- inputting footer elements to be modified later in css -->
     <footer>
       <article id='foot'>
+        <!-- headers for copyright and contact info -->
         <h6 class='foot-head'>© 2016 Aloha Apparel Co.</h6>
         <h6 class='foot-head'>Powered by HTML and CSS.</h6>
+        <!-- spans to hide words for mobile sizing -->
         <h6 class='foot-head cc'><span class='hide'>phone:  </span>604-604-6040 </h6>
+        <!-- hyperlink to email -->
         <h6 class='foot-head cc'><span class='hide'>email:  </span><a href='mailto:info@alohaaparrel.com'>info@alohaapparel.com</a></h6>
+        <!-- mailing address, color to be modified - grey -->
         <p class='foot-add'>1490 W Broadway</br>Vancouver, BC, Canada
+          <!-- an aside for the social media links -->
         <aside class='foot-soc'>
+          <!-- put them in a list for easier management -->
           <ul class='foot-list'>
+            <!-- i elements are font-awesome.  Spans to hide titles -->
             <li class='foot-li'><a href='https://www.facebook.com/' target='_blank'><i class='fa fa-facebook' aria-hidden='true'></i><span>   Facebook</span></a></li>
             <li class='foot-li'><a href='https://www.instagram.com/' target='_blank'><i class='fa fa-instagram' aria-hidden='true'></i><span>  Instagram</span></a></li>
             <li class='foot-li'><a href='https://www.pinterest.com/' target='_blank'><i class='fa fa-pinterest-p' aria-hidden='true'></i><span>   Pinterest</span></a></li>
@@ -172,11 +197,11 @@
             <li class='foot-li'><a href='https://www.twitter.com' target='_blank'><i class='fa fa-twitter' aria-hidden='true'></i><span>   Twitter</span></a></li>
           </ul>
     </footer>
+        <!-- scripts for javascript :: DO NOT TAMPER WITH THE ORDER :: -->
         <script src="http://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  crossorigin="anonymous"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-      <script type='text/javascript' src='js/perkyScript.js'></script>
+    <script type='text/javascript' src='js/perkyScript.js'></script>
   </body>
 </html>

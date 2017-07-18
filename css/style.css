@@ -1,86 +1,89 @@
 
+/*setting defaults for the entire website*/
 body {
-  margin: 0px;
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
   background-color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  margin: 0px;
 }
-
+/*hiding the 'hi' class (aloha text)  */
 .hi {
   display: none;
 }
-
+/*setting header to 0px for reasons  */
 header {
   margin: 0px;
 }
-
+/*setting defaults for h family... probably a better way...  */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair-Display', sans-serif;
 }
-
+/*eh?  oh, this is the defaults for clicky things  */
 a {
   color: #e2574c;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
 }
-
+/*defaults for hovery things  */
 a:hover {
   color: #b1574c;
 }
-
+/*header settings width fills 100% of the screen, height is 108 pixels, etc, etc */
 #header {
-  z-index: 4;
-  width: 100%;
+  background-color: white;
   height: 108px;
   position: fixed;
-  background-color: white;
+  width: 100%;
+  z-index: 4;
 }
-
+/*container box for all the perty things on top  */
 .box-head {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
+/*container box for the Aloha icon  */
 .icon-box {
+  display: flex;
   order: 1;
   width: 50%;
-  display: flex;
 }
+/*settings for the icon itself  */
 .icon {
-  height: 50px;
   align-items: center;
-  margin: 10px;
+  height: 50px;
   justify-content: flex-start;
+  margin: 10px;
 }
-
+/*settings for the container box containing the cart (which is a container on wheels - or in this case, a container of digital items)  */
 .cart-box {
-  order: 2;
-  width: 50%;
   display: flex;
   flex-direction: row-reverse;
+  order: 2;
+  width: 50%;
 }
+/*settings for the car itself  */
 .cart {
   align-items: center;
   height: 50px;
   margin: 10px;
 }
-
+/*container box containing the words for smooth-scrolling  */
 .click-box {
   border-top: #D7d7d7 solid 1px;
-  order: 3;
-  width: 92%;
   display: flex;
-  padding: 11px;
   justify-content: center;
+  order: 3;
+  padding: 11px;
+  width: 92%;
 }
-
+/*a class name for the UL and the settings that follow  */
 .click {
   align-items: center;
   justify-content: center;
   margin: 0;
 }
-
+/*a class name for the LI and the settings that follow - changing list items' display to inline for the horizontal greatness*/
 .clack {
   display: inline;
   font-size: 13px;
@@ -89,120 +92,115 @@ a:hover {
   padding: 10px;
   text-transform: uppercase; 
 }
-
+/*container box to make flexing banner elements wonderfully easy */
 #banner {
   padding-top: 110px;
   width: 100%;
   display: flex;
 }
-
+/*settings for the background of the banner - importing images, overlaying images, resizing images  */
 .banner-bg {
-  width: 100%;
   background-image:  url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
-  height: 400px;
   background-position: center 60px, center top;
   background-repeat: no-repeat, no-repeat;
   background-size: 150px, cover;
   display:flex;
-  z-index: 3;
-}
-
-.banner-text-box {
-  position: relative;
   height: 400px;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
+}
+/*like Batman, this banner needed a little darkness to improve itself... Although Adam West was gold.  Killed two birds with one stone by making the text-box an overlay for the background image.  Later realized there is a better way.*/
+.banner-text-box {
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
+  height: 400px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
 }
-
+/* Basic settings for the text inside the banner - applies to both text fields */
 .banner-text {
-  text-align: center;
-  z-index: 1;
-  justify-content: center;
   align-content: center;
   color: white;
+  display: flex;
   flex-basis: 100%;
   flex-wrap: wrap;
+  justify-content: center;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
-  display: flex;
+  text-align: center;
+  z-index: 1;
 }
-
+/* More refined settings for the more refined individual... Or in this case, group of characters chilling under the 'p' tag */
 .banner-text p {
-  text-transform: uppercase;
   font-family: 'Raleway-bold', sans-serif;
   flex-basis: 100%;
   font-size: 18px;
   font-weight: 500;
+  text-transform: uppercase;
   z-index: 0;
 }
-
+/* settings for the heading in the banner */
 .banner-text h2 {
-  font-size: 35px;
   flex-basis: 76%;
+  font-size: 35px;
   font-weight: 300;
+  line-height: 0.9;
   margin: 0px;
   z-index: 0;
-  line-height: 0.9;
 }
-
+/* basic settings for the 'About' section */
 #handy {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  z-index: 3;
   margin-top: 4em;
   padding-left: 5%;
   padding-right: 5%;
+  text-align: center;
+  z-index: 3;
 }
-
+/* settings for a handy header */
 #handy h3 {
   font-family: Playfair Display-bold;
   font-size: 2.5em;
-  width: 100%;
   margin-bottom: 0;
+  width: 100%;
 }
-
+/* classy handy settings */
 .handy {
   font-family: Playfair Display-italic;
   font-weight: 300;
 }
-
+/* settings for a handy paragraph */
 #handy p {
   font-size: 1.1em;
   line-height: 2;
   margin-top: 1em;
   margin-bottom: 60px;
 }
-
+/* container for the grid */
 #categories {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-/*
-.t-image {
-  width:100%;
-}*/
-
-
+/* settings for all rectangles in existance... within the grid */
 .rectangle {
-  z-index: 0;
-  width: 100%;
+  box-sizing: border-box;
   flex-basis: 100%;
   padding-top: 50%;
   position: relative;
-  box-sizing: border-box;
+  width: 100%;
+  z-index: 0;
 }
-
+/* my nickname in highschool.  I think it's because I was always on point */
 .square {
-  z-index:0;
-  width: 50%;
+  box-sizing: border-box;
   padding-top: 50%;
   position: relative;
-  box-sizing: border-box;
+  width: 50%;
+  z-index:0;
 }
-
+/* individually changing the settings inside the grid-shapes / applied linear gradients instead of seperate darkening boxes */
 .rectangle.one {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/mens-category.jpg');
   background-position: right bottom;
@@ -210,26 +208,26 @@ a:hover {
   background-size: cover;
   border-bottom: 4px solid white;
 }
-
+/* changed the settings in order of appearance */
 .square.two {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/trends-category.jpg');
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top: 4px solid white;
-  border-right: 4px solid white;
   border-bottom: 4px solid white;
+  border-right: 4px solid white;
+  border-top: 4px solid white;
   margin: 0px;
 }
-
+/* still at it */
 .square.three {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/glasses-category.jpg');
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top: 4px solid white;
-  border-left: 4px solid white;
   border-bottom: 4px solid white;
+  border-left: 4px solid white;
+  border-top: 4px solid white;
   margin: 0px;
 }
 
@@ -238,9 +236,9 @@ a:hover {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top: 4px solid white;
-  border-right: 4px solid white;
   border-bottom: 4px solid white;
+  border-right: 4px solid white;
+  border-top: 4px solid white;
   margin: 0px;
 }
 
@@ -249,12 +247,12 @@ a:hover {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top: 4px solid white;
-  border-left: 4px solid white;
   border-bottom: 4px solid white;
+  border-left: 4px solid white;
+  border-top: 4px solid white;
   margin: 0px;
 }
-
+/* and it's over. */
 .rectangle.six {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/womens-category.jpg');
   background-position: right bottom;
@@ -262,137 +260,132 @@ a:hover {
   background-size: cover;
   border-top: 4px solid white;
 }
-
+/* changing the clicky settings for hyperlinks inside the grid.  Links to nowhere, as it turns out! */
 .cat-text a {
   color: white;
   font-size: 1.5em;
   font-family: Raleway-bold;
   font-weight: 200;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  text-transform: uppercase;
+  left:50%;
   margin: 0px;
   padding: 0px;
   position: absolute;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
   top: 50%;
-  left:50%;
   transform: translate(-50%, -50%);
 }
+/* hover settings for hyperlinks inside grids */
 .cat-text a:hover {
   color: #F4E98C;
 }
-
-/* .main-carousel { */
-
-   /* aside {
-  width:fit-content;
-}  */
-
+/* lovely words */
 #lovely {
-  text-align: center;
   margin-top: 4em;
   padding-left: 5%;
   padding-right: 5%;
+  text-align: center;
 }
-
+/* more lovely words, but not the same as the previous lovely words.  These lovely words are *FANCY* */
 #lovely h3 {
-  font-family: Playfair Display-italic;
-  font-weight: 300;
+  font-family: 'Playfair Display-italic';
   font-size: 2.5em;
+  font-weight: 300;
 }
-
+/* While this word is technically lovely, it is more agressive than the fancier ones */
 .products {
-  font-family: Playfair Display-bold;
+  font-family: 'Playfair Display-bold';
   font-weight: 500;
 }
-
+/* Most settings are set in Javascript for the main carousel, but some space was needed between it and the bubbles */
 .main-carousel {
   margin-bottom: 100px;
 }
-
+/* some settings for the carrousel's cells - resizing and repositioning */
 .carousel-cell {
-  width: 100%;
-  height: auto;
-  transform: translate(9.5%,0%); 
-  margin-right: 10px;
   border-radius: 5px;
+  height: auto;
+  margin-right: 10px;
+  transform: translate(9.5%,0%); 
+  width: 100%;
 }
-
+/* fine-tuning the pictures */
 .car-pic {
-  width: 80%;
   height: auto;
   left: 50%;
   transform: translate(0.5%,0%);
+  width: 80%;
 }
-
+/* fine-tuning fonts for cagegory indicators */
 .car-cat {
+  color: #969696;
   font-size: 10px;
   font-weight: 600;
   font-family: 'Raleway-bold';
-  color: #969696;
+  margin-bottom: 4px;
   text-transform: uppercase;
   text-align: center;
   transform: translate(-9.5%,0%);
-  margin-bottom: 4px;
 }
-
+/* labels for the products, fine tuning fonts */
 .car-lab {
-  font-size: 21px;
   color: #e2574c;
+  font-size: 21px;
   font-weight: 100;
-  text-align: center;
-  transform: translate(-9.5%,0%);
   margin-top: 8px;
   margin-bottom: 0px;
-}
-
-.car-dollas {
-  font-size: 14px;
-  color: #969696;
-  font-family: 'Raleway-bold';
-  font-weight: 500;
   text-align: center;
-  margin-top: 0px;
+  transform: translate(-9.5%,0%);
 }
-.car-dollas.cc{
-  transform: translate(-9.5%,0%); 
-  margin-top: 24px;
+/* fine tuning of pricing for the carousel products */
+.car-dollas {
+  color: #969696;
+  font-size: 14px;
   font-family: 'Raleway-bold';
   font-weight: 500;
-  margin-bottom: 60px;
+  margin-top: 0px;
+  text-align: center;
 }
-
-
+/* the last two items glitched and this is my fix */
+.car-dollas.cc{
+  font-family: 'Raleway-bold';
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 60px;
+  transform: translate(-9.5%,0%); 
+}
+/* newsletter box adding background, darkening overlay, flexbox, etc*/
 #subscribe {
+  align-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/wave-bkgd.jpg');
-  height: 350px;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 150px cover;
+  color: white;
   display: flex;
-  justify-content: center;
-  align-content: center;
   flex-direction: column;
+  height: 350px;
+  justify-content: center;
   text-align: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  color: white;
 }
-
+/* fine-tuning the header for the newsletter subscription box */
 #subscribe h5 {
   font-size: 2.5em;
-  font-family: Playfair Display-italic;
+  font-family: 'Playfair Display-italic';
   font-weight: 300;
   margin-bottom: 0;
   margin-top: 0;
 }
-
+/* boldening of the word 'update' */
 .update {
-  font-family: Playfair Display-bold;
+  font-family: 'Playfair Display-bold';
   font-weight: 500;
   margin-bottom: 0;
   margin-top: 0;
 }
-
+/* settings for the 'paragraph' */
 #subscribe p {
   display: inline-block;
   font-size: 1.1em;
@@ -400,30 +393,31 @@ a:hover {
   margin-top: 1em;
   padding: 0 5%;
 }
-
+/* settings for the text field users input their emails to */
 .email {
-  width: 80%;
-  height: 40px;
   background-color: whitesmoke;
-  color: grey;
-  font-family: 'Raleway';
   border-radius: 21px;
+  color: grey;
+  height: 40px;
+  font-family: 'Raleway';
   font-size: 1em;
   padding-left: 30px;
+  padding-top: 2px;
+  width: 80%;
 }
-
+/* settings for the 'subscribe' button */
 .submit {
-  color: white;
   background-color: #e2524c;
   border-radius: 21px;
-  margin-left: -110px;
   font-family: 'Raleway';
-  width: 105px;
-  height: 39px;
   font-size: 1em;
+  height: 37px;
+  margin-left: -118px;
+  text-align: center;
+  -webkit-text-fill-color:  white;
+  width: 105px;
 }
-
-
+/* basic settings for the footer */
 #foot {
   align-content: center;
   background-color: #242424;
@@ -437,154 +431,151 @@ a:hover {
   padding-top: 20px;
   width: 100%;
 }
-
+/* fine-tuning of the copyright and contact information */
 .foot-head {
   display: block;
+  font-size: 1em;
+  line-height: 0;
   margin:8px;
   text-align: center;
-  line-height: 0;
-  font-size: 1em;
   width: 91%;
 }
-
+/* finer-tuning of contact elements */
 .foot-head.cc {
-  padding-top: 40px;
-  width: 102px;
-  margin-bottom: 40px;
   font-size: 1.1em;
+  margin-bottom: 40px;
   margin-left: -35px;
+  padding-top: 40px;
   padding-right: 35px;
+  width: 102px;
 }
-
+/* hide the words connected to contact info (phone & email) */
 .foot-head .hide {
   display: none;
 }
-
+/* basic settings for social media list box */
 .foot-soc {
-  width: 100%;
   padding: 0;
+  width: 100%;
 }
-
+/* fine-tuning of social media UL elements */
  .foot-list {
-  display: flex;
   align-content: center;
+  display: flex;
   justify-content: center;
-  width: 100%;
   padding: 0;
+  width: 100%;
 } 
-
+/* changing social media elements into horizontal list */
 .foot-li {
   display: inline;
   padding: 10px;
 }
+/* hiding social media titles */
 .foot-li span {
   display: none;
 }
-
+/* fine-tuning mailing address info */
 .foot-add {
+  color: #969696;
+  text-align: center;
   margin: 0;
   width: 100%;
-  text-align: center;
-  color: #969696;
 }
-
+/* changing settings for hyperlinks in the footer */
 #foot a {
   color: white;
-  text-decoration: underline;
   font-family: 'Playfair Display-bold';
   font-weight: 700;
+  text-decoration: underline;
 }
-
+/* changing settings for hovering over hyperlinks in the footer */
 #foot a:hover {
   color: #b1574c;
 }
 
-
-
-
-
-
 /*Begin code for tablet screens*/
 @media (min-width: 600px){
+  /* new font size */
   body {
     font-size: 16px;
   }
-
+/* new height */
     #header {
       height: 90px;
   }
-
+/* new flex wrap and alignment */
   .box-head {
-    flex-wrap: nowrap;
     align-content: center;
+    flex-wrap: nowrap;
   }
-
+/* new width */
   .icon-box {
-    width: 15%;
     padding-top: 10px;
+    width: 15%;
   }
-
+/* new width */
   .icon {
     width: 100%;
   }
-
+/* new order and width for elements in hearer */
   .cart-box{
     order: 3;
-    width: 15%;
     padding: 8px;
     padding-right: 6px;
+    width: 15%;
   }
-
+/* new order and width */
   .click-box {
     border: 0;
-    order: 2;
-    width: 70%;
-    padding: 0;
     margin-top: 20px;
-  }
-
-  .click {
+    order: 2;
     padding: 0;
-    display: flex;
+    width: 70%;
   }
-
+/* removing padding and adding */
+  .click {
+    display: flex;
+    padding: 0;
+  }
+/* adjusting padding and font size */
   .clack {
     padding: 5%;
     font-size: 0.9em;
   }
-
+/* adjusting padding */
   #banner {
     padding-top: 90px;
   }
-
+/* resizing background images */
   .banner-bg {
     background-size: 150px, cover;
   }
-
+/* resizing banner text and margins */
   .banner-text p{
     font-size: 1.25em;
     margin-top: 0;
     margin-bottom: 15px;
   }
-
+/* resizing banner header */
   .banner-text h2 {
     font-size: 3em;
   }
-
+/* resizing 'hand-crafted' text */
   #handy p {
     font-size: 1.11em;
   }
-
+/* resizing rectangle grid elements and padding */
   .rectangle {
     flex-basis: 50%;
     padding-top: 25%;
   }
-
+/* resizing square grid elements and padding */
   .square {
     flex-basis: 25%;
     padding-top: 25%;
   }
-
+/* changing border positions for each individual square and rectangle */
   .rectangle.one {
     border-right: 4px solid white;
   }
@@ -615,127 +606,128 @@ a:hover {
   .rectangle.six {
     border-left: 4px solid white;
   }
-
+/* adjusting carousel's cell width */
   .carousel-cell {
     width:50%;
   }
-
+/* fine-tuning carousel picture positioning */
   .car-pic {
     transform: translate(11%,0%);
     width: 65%;
   }
-
+/* resizing carousel category fonts */
   .car-cat {
     font-size: 0.75em;
     font-weight: 600;
   }
-
+/* resizing carousel price fonts */
   .car-dollas {
     font-size: 0.8em;
   }
+  /* glitch compensation */
   .car-dollas.cc {
     font-size: 1.05em;
   }
-
+/* newsletter paragraph font and padding resizing */
   #subscribe p {
     font-size: 1.15em;
     padding: 0 2%;
   }
-
+/* margin adjustment for click bubble */
   .submit {
-    margin-left: -111px;
+    margin-left: -117px;
   }
-
+/* padding and text field resizing */
   .email {
-    width: 60%;
+    padding-top: 3px;
     max-width: 500px;
+    width: 60%;
   }
-
+/* footer layout adjustmenst */
   #foot {
     flex-direction: column;
+    align-content: space-around;
     height: 200px;
     padding: 50px 0px;
-    align-content: space-around;
   }
-
+/* adjustments for the copyright and contact info fonts */
   .foot-head {
-    text-align: left;
-    margin: 0;
-    padding-bottom: 16px;
     display: block;
-    order: 1;
     font-size: 0.9em;
-    width: 60%;
-  }
-
-  .foot-head.cc {
-    width: 60%;
     margin: 0;
-    font-size: 0.9em;
-    padding: 16px 0 0 0;
+    order: 1;
+    padding-bottom: 16px;
+    text-align: left;
+    width: 60%;
   }
+/* size and padding adjustments for contact info */
+  .foot-head.cc {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 16px 0 0 0;
+    width: 60%;
+  }
+/* unhide 'phone' and 'email' */
   .foot-head .hide {
     display: inline;
   }
-
+/* size and order adjustments for mailing address */
   .foot-add {
-    width: 75%;
-    text-align: left;
-    padding: 0;
+    font-size: 0.9em;
     margin: 40px 0 0 0;
     order: 2;
-    font-size: 0.9em;
+    padding: 0;
+    text-align: left;
+    width: 75%;
   }
-
+/* size and order adjustments for social media links */
   .foot-soc {
-    width: 15%;
     height: 300px;
     order: 3;
     padding:0;
+    width: 15%;
   }
-
+/* formatting adjustments for social media links */
   .foot-list {
     display: block;
     justify-content: left;
-    text-align: left;
     padding:0;
+    text-align: left;
   }
-
+/* padding and alignment adjustment for social media list items */
   .foot-li {
+    align-self: left;
     display: list-item;
     list-style-type: none;
-    align-self: left;
     padding: 5px 0 6px 0;
   }
-
+/* unhide social media titles */
   .foot-li span {
     display: inline;
     font-family: 'Raleway';
     font-weight: 400;
   }
-
+/* take away the underline on social media links */
   #foot .foot-li a {
     text-decoration: none;
   }
-
-
 }
 
-
-/*code for max-banner width end*/
+/*code for min-banner width 600px end*/
 @media (min-width:620px) {
+/* adjust the mode of repetition for the background on the banner */
   .banner-bg {
     background-repeat: no-repeat, repeat;
   }
 }
-
+/* set max width for newsletter paragraph */
 @media (min-width: 720px) {
   #subscribe p {
     align-self: center;
     max-width: 710px;
   }
 }
-
+/* set max width for 'hand-crafted' paragraph */
 @media (min-width: 827px) {
   #handy p {
     left: 50%;
@@ -746,32 +738,32 @@ a:hover {
 
 /*begin code for desktop screens*/
 @media(min-width: 1240px){
-
+/* new width */
   .icon-box {
     width: 15%;
   }
-
+/* new sizing */
     .icon {
       width: 160px;
       height: 60px;
   }
-
+/* new sizing */
     .cart-box {
       width: 15%;
       height: 60px;
   }
-
+/* new sizing */
   .cart {
     width: 60px;
     height: 60px;
   }
-
+/* font size and padding adjustments */
   .clack {
     padding: 5%;
     font-size: 0.95em;
     font-weight: 700;
   }
-
+/* banner sizing, centering and repitition adjustments */
   .banner-bg {
     height: 510px;
     width: 100%;
@@ -779,22 +771,21 @@ a:hover {
     background-repeat: no-repeat, repeat;
     background-size: 250px, contain;
   }
-
+/* darkening box and text-box adjustments */
   .banner-text-box {
     height: 510px;
   }
-
+/* sizing adjustments for carousel */
   .carousel-cell {
     width: 25%;
   }
-
+/* fine-tuning of adjustments for carousel pictures */
   .car-pic {
     width: 85%;
     transform: translate(-2.5%, 0);
   }
-  
+/* adjustment of positioning for social media links */
   .foot-soc {
     width: 10%;
   }
-
 }
