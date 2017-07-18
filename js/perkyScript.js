@@ -43,14 +43,13 @@ else if (windowW===1240) {
 });
 
 $(document).ready(function(){
-  var checkEmail = $('.email').value;
-  $(this).on('click', 'button', function(){
-    $('.email').setAttribute('value:','')
-    var email = $('.email').text.checkValidity();
-    if (email === false){
-      window.alert('not a valid email');
+  var checkEmail = $('.email');
+  function myFunction() {
+    if (email.checkValidity == false){
+      alert('not a valid email');
     }
-    else if (email === true)
-      window.alert('Thank you for Subscribing');
-  });
+    else {
+      alert('Thank you for Subscribing');
+    }
+  }
 });

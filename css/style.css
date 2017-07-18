@@ -320,7 +320,7 @@ a:hover {
 
 .car-pic {
   width: 80%;
-  height: auto%;
+  height: auto;
   left: 50%;
   transform: translate(0.5%,0%);
 }
@@ -400,6 +400,29 @@ a:hover {
   margin-top: 1em;
   padding: 0 5%;
 }
+
+.email {
+  width: 80%;
+  height: 40px;
+  background-color: whitesmoke;
+  color: grey;
+  font-family: 'Raleway';
+  border-radius: 21px;
+  font-size: 1em;
+  padding-left: 30px;
+}
+
+.submit {
+  color: white;
+  background-color: #e2524c;
+  border-radius: 21px;
+  margin-left: -110px;
+  font-family: 'Raleway';
+  width: 105px;
+  height: 39px;
+  font-size: 1em;
+}
+
 
 #foot {
   align-content: center;
@@ -617,6 +640,15 @@ a:hover {
   #subscribe p {
     font-size: 1.15em;
     padding: 0 2%;
+  }
+
+  .submit {
+    margin-left: -111px;
+  }
+
+  .email {
+    width: 60%;
+    max-width: 500px;
   }
 
   #foot {
