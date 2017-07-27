@@ -6,6 +6,11 @@ body {
   font-size: 14px;
   margin: 0px;
 }
+
+#main[tabindex="-1"]:focus {
+   outline: 0;
+}
+
 /*hiding the 'hi' class (aloha text)  */
 .hi {
   display: none;
@@ -29,7 +34,7 @@ a:hover {
   color: #b1574c;
 }
 /*header settings width fills 100% of the screen, height is 108 pixels, etc, etc */
-#header {
+.header {
   background-color: white;
   height: 108px;
   position: fixed;
@@ -93,7 +98,7 @@ a:hover {
   text-transform: uppercase; 
 }
 /*container box to make flexing banner elements wonderfully easy */
-#banner {
+.banner {
   padding-top: 110px;
   width: 100%;
   display: flex;
@@ -149,7 +154,7 @@ a:hover {
   z-index: 0;
 }
 /* basic settings for the 'About' section */
-#handy {
+.handy {
   display: flex;
   flex-direction: column;
   margin-top: 4em;
@@ -159,26 +164,26 @@ a:hover {
   z-index: 3;
 }
 /* settings for a handy header */
-#handy h3 {
+.handy h3 {
   font-family: Playfair Display-bold;
   font-size: 2.5em;
   margin-bottom: 0;
   width: 100%;
 }
 /* classy handy settings */
-.handy {
+.handily {
   font-family: Playfair Display-italic;
   font-weight: 300;
 }
 /* settings for a handy paragraph */
-#handy p {
+.handy p {
   font-size: 1.1em;
   line-height: 2;
   margin-top: 1em;
   margin-bottom: 60px;
 }
 /* container for the grid */
-#categories {
+.categories {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -288,7 +293,7 @@ a:hover {
   text-align: center;
 }
 /* more lovely words, but not the same as the previous lovely words.  These lovely words are *FANCY* */
-#lovely h3 {
+.lovely h3 {
   font-family: 'Playfair Display-italic';
   font-size: 2.5em;
   font-weight: 300;
@@ -356,7 +361,7 @@ a:hover {
   transform: translate(-9.5%,0%); 
 }
 /* newsletter box adding background, darkening overlay, flexbox, etc*/
-#subscribe {
+.subscribe {
   align-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/wave-bkgd.jpg');
   background-position: center bottom;
@@ -371,7 +376,7 @@ a:hover {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 /* fine-tuning the header for the newsletter subscription box */
-#subscribe h5 {
+.subscribe h5 {
   font-size: 2.5em;
   font-family: 'Playfair Display-italic';
   font-weight: 300;
@@ -386,7 +391,7 @@ a:hover {
   margin-top: 0;
 }
 /* settings for the 'paragraph' */
-#subscribe p {
+.subscribe p {
   display: inline-block;
   font-size: 1.1em;
   line-height: 2;
@@ -418,7 +423,7 @@ a:hover {
   width: 105px;
 }
 /* basic settings for the footer */
-#foot {
+.foot {
   align-content: center;
   background-color: #242424;
   color: white;
@@ -483,14 +488,14 @@ a:hover {
   width: 100%;
 }
 /* changing settings for hyperlinks in the footer */
-#foot a {
+.foot a {
   color: white;
   font-family: 'Playfair Display-bold';
   font-weight: 700;
   text-decoration: underline;
 }
 /* changing settings for hovering over hyperlinks in the footer */
-#foot a:hover {
+.foot a:hover {
   color: #b1574c;
 }
 
@@ -501,7 +506,7 @@ a:hover {
     font-size: 16px;
   }
 /* new height */
-    #header {
+    .header {
       height: 90px;
   }
 /* new flex wrap and alignment */
@@ -544,7 +549,7 @@ a:hover {
     font-size: 0.9em;
   }
 /* adjusting padding */
-  #banner {
+  .banner {
     padding-top: 90px;
   }
 /* resizing background images */
@@ -562,7 +567,7 @@ a:hover {
     font-size: 3em;
   }
 /* resizing 'hand-crafted' text */
-  #handy p {
+  .handy p {
     font-size: 1.11em;
   }
 /* resizing rectangle grid elements and padding */
@@ -629,7 +634,7 @@ a:hover {
     font-size: 1.05em;
   }
 /* newsletter paragraph font and padding resizing */
-  #subscribe p {
+  .subscribe p {
     font-size: 1.15em;
     padding: 0 2%;
   }
@@ -644,7 +649,7 @@ a:hover {
     width: 60%;
   }
 /* footer layout adjustmenst */
-  #foot {
+  .foot {
     flex-direction: column;
     align-content: space-around;
     height: 200px;
@@ -708,7 +713,7 @@ a:hover {
     font-weight: 400;
   }
 /* take away the underline on social media links */
-  #foot .foot-li a {
+  .foot .foot-li a {
     text-decoration: none;
   }
 }
@@ -722,14 +727,14 @@ a:hover {
 }
 /* set max width for newsletter paragraph */
 @media (min-width: 720px) {
-  #subscribe p {
+  .subscribe p {
     align-self: center;
     max-width: 710px;
   }
 }
 /* set max width for 'hand-crafted' paragraph */
 @media (min-width: 827px) {
-  #handy p {
+  .handy p {
     left: 50%;
     align-self: center;
     max-width: 650px;
@@ -743,14 +748,14 @@ a:hover {
     width: 15%;
   }
 /* new sizing */
-    .icon {
-      width: 160px;
-      height: 60px;
+  .icon {
+    width: 160px;
+    height: 60px;
   }
 /* new sizing */
-    .cart-box {
-      width: 15%;
-      height: 60px;
+  .cart-box {
+    width: 15%;
+    height: 60px;
   }
 /* new sizing */
   .cart {
@@ -788,4 +793,22 @@ a:hover {
   .foot-soc {
     width: 10%;
   }
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
 }

@@ -108,6 +108,12 @@ else if (windowW===1240) {
     else alert('Thank you for subscribing!');
 }
 
+$(function() {
+   $("a[href^='#']").not("a[href='#']").click(function() {
+      $("#"+$(this).attr("href").slice(1)+"").focus();
+   });
+});
+  
 //execute order 66 . . . but before you do validate the form to make sure that is what you want to do.
 $('.submit').on('click', function(){
   validateForm();

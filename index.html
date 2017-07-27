@@ -26,12 +26,17 @@
 </head>
 <!-- beginning of bone-structure -->
   <body>
+        <script async
+      src="http://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <a class="screen-reader-text" href="#main">Skip to content</a>
     <!-- invisible title, present for Google search algorithms -->
     <h1 class='hi'>Aloha!</h1>
     <!--imputing the elements and assets for the header to be adjusted later in CSS-->
     <header>
       <!--logo-->
-      <article id='header'>
+      <article class='header'>
         <div class='box-head'>
           <div class='icon-box'><img class='icon' src='images/aloha-logo.svg' alt="aloha!"/></div>
           <!--cart icon-->
@@ -48,7 +53,7 @@
       </article>
     </header>
     <!--inputting elements and assets for the welcome banner to be adjusted later in CSS-->
-    <section id='banner'>
+    <section class='banner'>
       <!--banner background-->
       <element class='banner-bg'>
         <!--banner foreground-->
@@ -61,121 +66,123 @@
         </div>
       </element>
     </section>
-  <!--inputting elements and assets for the categories table to be modified and stylized later in CSS-->
-    <section id='handy'>
-      <h3><span class='handy'>Hand Crafted </span>Styles</h3>
-      <p>Aloha Apparel Co. Sells only the finest ready-to-travel clothing.  Browse our current selection of production or sign-up for updates below.</p>
-    </section>
-    <!-- beginning consctruction of grid -->
-    <section id='categories'>
-      <!-- giving shapes two classes, one to share, one to select individually with ease -->
-        <div class='rectangle one'>
-          <p class='cat-text'><a  href='#'>Men's</a></p>
+    <main id="main" class="mainsite" tabindex="-1">
+    <!--inputting elements and assets for the categories table to be modified and stylized later in CSS-->
+      <section class='handy'>
+        <h3><span class='handily'>Hand Crafted </span>Styles</h3>
+        <p>Aloha Apparel Co. Sells only the finest ready-to-travel clothing.  Browse our current selection of production or sign-up for updates below.</p>
+      </section>
+      <!-- beginning consctruction of grid -->
+      <section class='categories'>
+        <!-- giving shapes two classes, one to share, one to select individually with ease -->
+          <div class='rectangle one'>
+            <p class='cat-text'><a  href='#'>Men's</a></p>
+          </div>
+        <div class='square two'>
+          <p class='cat-text'><a  href='#'>Trends</a></p>
         </div>
-      <div class='square two'>
-        <p class='cat-text'><a  href='#'>Trends</a></p>
-      </div>
-      <div class='square three'>
-        <p class='cat-text'><a  href='#'>Glasses</a></p>
-      </div>
-      <div class='square four'>
-        <p class='cat-text'><a  href='#'>Sale</a></p>
-      </div>
-      <div class='square five'>
-        <p class='cat-text'><a  href='#'>Bags</a></p>
-      </div>
-      <div class='rectangle six'>
-        <p class='cat-text'><a  href='#'>Women's</a></p>
-      </div>
-    </section>
-    <section id='lovely'>
-      <h3>Most-Loved <span class='products'>Products</span></h3>
-    </section>
-  <!--inputting elements and assets for the carousel to be modified later in CSS and java script-->
-    <section class='main-carousel'>
-      <article class='carousel-cell'>
-        <!-- aside for the image -->
-        <aside>
-          <img class='car-pic' src='images/stretch-knit-dress.jpg'/>
-        </aside>
-        <!-- two paragraphs for category and price -->
-        <p class='car-cat'>dresses</h4>
-          <!-- one header for the label -->
-        <h4 class='car-lab'>Stretch Knit Dresses</p>
-        <p class='car-dollas'>$ 169.00</p>
-      </article>
-      <article class='carousel-cell'>
-        <aside>
-          <img class='car-pic' src='images/cotton-blue-shirt.jpg'/>
-        </aside>
-        <p class='car-cat'>shirts</h4>
-        <h4 class='car-lab'>Cotton Blue Shirts</p>
-        <p class='car-dollas'>$ 89.00</p>
-      </article>
-      <article class='carousel-cell'>
-        <aside>
-          <img class='car-pic' src='images/checked-stretch-dress.jpg'/>
-        </aside>
-        <p class='car-cat'>dresses</h4>
-        <h4 class='car-lab'>Checked Stretch Dress</p>
-        <p class='car-dollas'>$ 129.00</p>
-      </article>
-      <article class='carousel-cell'>
-        <aside>
-          <img class='car-pic' src='images/blue-hipster-backpack.jpg'/>
-        </aside>
-        <p class='car-cat'>bags</h4>
-        <h4 class='car-lab'>Blue Hipster Backpack</p>
-        <p class='car-dollas'>$ 69.00</p>
-      </article>
-      <article class='carousel-cell'>
-        <aside>
-          <img class='car-pic' src='images/demin-overall-shorts.jpg'/>
-        </aside>
-        <p class='car-cat'>demin</h4>
-        <h4 class='car-lab'>Demin Overall Shorts</p>
-        <p class='car-dollas'>$ 89.00</p>
-      </article>
-      <article class='carousel-cell'>
-        <aside>
-          <img class='car-pic' src='images/pink-dotted-dress.jpg'/>
-        </aside>
-        <p class='car-cat'>dresses</h4>
-        <h4 class='car-lab'>Pink Dotted Dress</p>
-        <p class='car-dollas'>$ 99.00</p>
-      </article>
-      <article class='carousel-cell'>
-        <aside>
-          <img class='car-pic' src='images/blue-silk-dress.jpg'/>
-        </aside>
-        <p class='car-cat'>dresses</p>
-        <h4 class='car-lab'>Blue Silk Dress</h4>
-        <p class='car-dollas cc'>$ 119.00</p>
-      </article>
-      <article class='carousel-cell'>
-        <aside>
-          <img class='car-pic' src='images/cotton-yellow-tshirt.jpg'/>
-        </aside>
-        <p class='car-cat'>shirts</<p>
-        <h4 class='car-lab'>Cotton Yellow Shirt</h4>
-        <p class='car-dollas cc'>$ 39.00</p>
-      </article>
-    </section>
-    <!-- inputting elements for the newsletter subscriptiong to be modified later in css and javascript -->
-    <section id='subscribe'>
-      <h5>Sign-up for <span class='update'>Updates</span></h5>
-      <p class='newsletter'>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog.  Unsubscribe at any time.</p>
-      <!-- beginning of form for subscribing -->
-      <form name='newsletter' action='form.php' method='post'>
-        <!-- text field -->
-        <input type='text' name='email' maxlength='80' class='email' placeholder='Your Email'/>
-        <!-- button -->
-        <input class='submit' type='submit' value='Submit' placeholder='Subscribe'/>
-      </form>
-    </section>
+        <div class='square three'>
+          <p class='cat-text'><a  href='#'>Glasses</a></p>
+        </div>
+        <div class='square four'>
+          <p class='cat-text'><a  href='#'>Sale</a></p>
+        </div>
+        <div class='square five'>
+          <p class='cat-text'><a  href='#'>Bags</a></p>
+        </div>
+        <div class='rectangle six'>
+          <p class='cat-text'><a  href='#'>Women's</a></p>
+        </div>
+      </section>
+      <section class='lovely'>
+        <h3>Most-Loved <span class='products'>Products</span></h3>
+      </section>
+    <!--inputting elements and assets for the carousel to be modified later in CSS and java script-->
+      <section class='main-carousel'>
+        <article class='carousel-cell'>
+          <!-- aside for the image -->
+          <aside>
+            <img class='car-pic' src='images/stretch-knit-dress.jpg'/>
+          </aside>
+          <!-- two paragraphs for category and price -->
+          <p class='car-cat'>dresses</h4>
+            <!-- one header for the label -->
+          <h4 class='car-lab'>Stretch Knit Dresses</p>
+          <p class='car-dollas'>$ 169.00</p>
+        </article>
+        <article class='carousel-cell'>
+          <aside>
+            <img class='car-pic' src='images/cotton-blue-shirt.jpg'/>
+          </aside>
+          <p class='car-cat'>shirts</h4>
+          <h4 class='car-lab'>Cotton Blue Shirts</p>
+          <p class='car-dollas'>$ 89.00</p>
+        </article>
+        <article class='carousel-cell'>
+          <aside>
+            <img class='car-pic' src='images/checked-stretch-dress.jpg'/>
+          </aside>
+          <p class='car-cat'>dresses</h4>
+          <h4 class='car-lab'>Checked Stretch Dress</p>
+          <p class='car-dollas'>$ 129.00</p>
+        </article>
+        <article class='carousel-cell'>
+          <aside>
+            <img class='car-pic' src='images/blue-hipster-backpack.jpg'/>
+          </aside>
+          <p class='car-cat'>bags</h4>
+          <h4 class='car-lab'>Blue Hipster Backpack</p>
+          <p class='car-dollas'>$ 69.00</p>
+        </article>
+        <article class='carousel-cell'>
+          <aside>
+            <img class='car-pic' src='images/demin-overall-shorts.jpg'/>
+          </aside>
+          <p class='car-cat'>demin</h4>
+          <h4 class='car-lab'>Demin Overall Shorts</p>
+          <p class='car-dollas'>$ 89.00</p>
+        </article>
+        <article class='carousel-cell'>
+          <aside>
+            <img class='car-pic' src='images/pink-dotted-dress.jpg'/>
+          </aside>
+          <p class='car-cat'>dresses</h4>
+          <h4 class='car-lab'>Pink Dotted Dress</p>
+          <p class='car-dollas'>$ 99.00</p>
+        </article>
+        <article class='carousel-cell'>
+          <aside>
+            <img class='car-pic' src='images/blue-silk-dress.jpg'/>
+          </aside>
+          <p class='car-cat'>dresses</p>
+          <h4 class='car-lab'>Blue Silk Dress</h4>
+          <p class='car-dollas cc'>$ 119.00</p>
+        </article>
+        <article class='carousel-cell'>
+          <aside>
+            <img class='car-pic' src='images/cotton-yellow-tshirt.jpg'/>
+          </aside>
+          <p class='car-cat'>shirts</<p>
+          <h4 class='car-lab'>Cotton Yellow Shirt</h4>
+          <p class='car-dollas cc'>$ 39.00</p>
+        </article>
+      </section>
+      <!-- inputting elements for the newsletter subscriptiong to be modified later in css and javascript -->
+      <section class='subscribe'>
+        <h5>Sign-up for <span class='update'>Updates</span></h5>
+        <p class='newsletter'>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog.  Unsubscribe at any time.</p>
+        <!-- beginning of form for subscribing -->
+        <form name='newsletter' action='form.php' method='post'>
+          <!-- text field -->
+          <input type='text' name='email' maxlength='80' class='email' placeholder='Your Email'/>
+          <!-- button -->
+          <input class='submit' type='submit' value='Submit' placeholder='Subscribe'/>
+        </form>
+      </section>
+    </main>
     <!-- inputting footer elements to be modified later in css -->
     <footer>
-      <article id='foot'>
+      <article class='foot'>
         <!-- headers for copyright and contact info -->
         <h6 class='foot-head'>© 2016 Aloha Apparel Co.</h6>
         <h6 class='foot-head'>Powered by HTML and CSS.</h6>
@@ -198,10 +205,9 @@
           </ul>
     </footer>
         <!-- scripts for javascript :: DO NOT TAMPER WITH THE ORDER :: -->
-        <script src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script type='text/javascript' src='js/perkyScript.js'></script>
+    <script src="js/tota11y.min.js"> </script>
   </body>
 </html>
