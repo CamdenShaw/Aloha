@@ -13,7 +13,7 @@
   <!-- link to flickity stylesheet -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!-- link to reset stylesheet -->
-  <link type='text/css' rel='stylsheet' href='css/normalize.css'>
+  <link type='text/css' rel='stylesheet' href='css/normalize.css'>
   <!-- link to raleway and playfair stylesheet -->
   <link type='text/css' rel='stylesheet' href='fonts/stylesheet.css'>
   <!-- link to css stylesheet for the html -->
@@ -36,7 +36,7 @@
     <!--imputing the elements and assets for the header to be adjusted later in CSS-->
     <header>
       <!--logo-->
-      <article class='header'>
+      <div class='header'>
         <div class='box-head'>
           <div class='icon-box'><img class='icon' src='images/aloha-logo.svg' alt="aloha!"/></div>
           <!--cart icon-->
@@ -50,12 +50,12 @@
               <li class='clack'><a href='#subscribe'>updates</a></li>
           </ul></div>
         </div>
-      </article>
+      </div>
     </header>
     <!--inputting elements and assets for the welcome banner to be adjusted later in CSS-->
     <section class='banner'>
       <!--banner background-->
-      <element class='banner-bg'>
+      <div class='banner-bg'>
         <!--banner foreground-->
         <div class='banner-text-box'>
           <div class='banner-text'>
@@ -64,7 +64,7 @@
             <h2 class='season'>Spring/Summer 2017</h2>
           </div>
         </div>
-      </element>
+      </div>
     </section>
     <main id="main" class="mainsite" tabindex="-1">
     <!--inputting elements and assets for the categories table to be modified and stylized later in CSS-->
@@ -102,57 +102,57 @@
         <article class='carousel-cell'>
           <!-- aside for the image -->
           <aside>
-            <img class='car-pic' src='images/stretch-knit-dress.jpg'/>
+            <img class='car-pic' src='images/stretch-knit-dress.jpg' alt='stretch knit dress'/>
           </aside>
           <!-- two paragraphs for category and price -->
-          <p class='car-cat'>dresses</h4>
+          <p class='car-cat'>dresses</p>
             <!-- one header for the label -->
-          <h4 class='car-lab'>Stretch Knit Dresses</p>
+          <h4 class='car-lab'>Stretch Knit Dresses</h4>
           <p class='car-dollas'>$ 169.00</p>
         </article>
         <article class='carousel-cell'>
           <aside>
-            <img class='car-pic' src='images/cotton-blue-shirt.jpg'/>
+            <img class='car-pic' src='images/cotton-blue-shirt.jpg' alt='cotton blue shirt'/>
           </aside>
-          <p class='car-cat'>shirts</h4>
-          <h4 class='car-lab'>Cotton Blue Shirts</p>
+          <p class='car-cat'>shirts</p>
+          <h4 class='car-lab'>Cotton Blue Shirts</h4>
           <p class='car-dollas'>$ 89.00</p>
         </article>
         <article class='carousel-cell'>
           <aside>
-            <img class='car-pic' src='images/checked-stretch-dress.jpg'/>
+            <img class='car-pic' src='images/checked-stretch-dress.jpg' alt='checked stretch dress'/>
           </aside>
-          <p class='car-cat'>dresses</h4>
-          <h4 class='car-lab'>Checked Stretch Dress</p>
+          <p class='car-cat'>dresses</p>
+          <h4 class='car-lab'>Checked Stretch Dress</h4>
           <p class='car-dollas'>$ 129.00</p>
         </article>
         <article class='carousel-cell'>
           <aside>
-            <img class='car-pic' src='images/blue-hipster-backpack.jpg'/>
+            <img class='car-pic' src='images/blue-hipster-backpack.jpg' alt='blue hipster backpack'/>
           </aside>
-          <p class='car-cat'>bags</h4>
-          <h4 class='car-lab'>Blue Hipster Backpack</p>
+          <p class='car-cat'>bags</p>
+          <h4 class='car-lab'>Blue Hipster Backpack</h4>
           <p class='car-dollas'>$ 69.00</p>
         </article>
         <article class='carousel-cell'>
           <aside>
-            <img class='car-pic' src='images/demin-overall-shorts.jpg'/>
+            <img class='car-pic' src='images/demin-overall-shorts.jpg' alt='demin overall shorts'/>
           </aside>
-          <p class='car-cat'>demin</h4>
-          <h4 class='car-lab'>Demin Overall Shorts</p>
+          <p class='car-cat'>demin</p>
+          <h4 class='car-lab'>Demin Overall Shorts</h4>
           <p class='car-dollas'>$ 89.00</p>
         </article>
         <article class='carousel-cell'>
           <aside>
-            <img class='car-pic' src='images/pink-dotted-dress.jpg'/>
+            <img class='car-pic' src='images/pink-dotted-dress.jpg' alt='pink dotted dress'/>
           </aside>
-          <p class='car-cat'>dresses</h4>
-          <h4 class='car-lab'>Pink Dotted Dress</p>
+          <p class='car-cat'>dresses</p>
+          <h4 class='car-lab'>Pink Dotted Dress</h4>
           <p class='car-dollas'>$ 99.00</p>
         </article>
         <article class='carousel-cell'>
           <aside>
-            <img class='car-pic' src='images/blue-silk-dress.jpg'/>
+            <img class='car-pic' src='images/blue-silk-dress.jpg' alt='blue silk dress'/>
           </aside>
           <p class='car-cat'>dresses</p>
           <h4 class='car-lab'>Blue Silk Dress</h4>
@@ -160,9 +160,9 @@
         </article>
         <article class='carousel-cell'>
           <aside>
-            <img class='car-pic' src='images/cotton-yellow-tshirt.jpg'/>
+            <img class='car-pic' src='images/cotton-yellow-tshirt.jpg' alt='cotton yellow tshirt'/>
           </aside>
-          <p class='car-cat'>shirts</<p>
+          <p class='car-cat'>shirts</p>
           <h4 class='car-lab'>Cotton Yellow Shirt</h4>
           <p class='car-dollas cc'>$ 39.00</p>
         </article>
@@ -176,7 +176,7 @@
           <!-- text field -->
           <input type='text' name='email' maxlength='80' class='email' placeholder='Your Email'/>
           <!-- button -->
-          <input class='submit' type='submit' value='Submit' placeholder='Subscribe'/>
+          <input class='submit' type='text' value='Submit' placeholder='Subscribe'/>
         </form>
       </section>
     </main>
@@ -191,7 +191,8 @@
         <!-- hyperlink to email -->
         <h6 class='foot-head cc'><span class='hide'>email:  </span><a href='mailto:info@alohaaparrel.com'>info@alohaapparel.com</a></h6>
         <!-- mailing address, color to be modified - grey -->
-        <p class='foot-add'>1490 W Broadway</br>Vancouver, BC, Canada
+        <p class='foot-add'>1490 W Broadway</p>
+        <p class='foot-add'>Vancouver, BC, Canada</p>
           <!-- an aside for the social media links -->
         <aside class='foot-soc'>
           <!-- put them in a list for easier management -->
@@ -203,6 +204,8 @@
             <li class='foot-li'><a href='https://plus.google.com/' target='_blank'><i class='fa fa-google-plus' aria-hidden='true'></i> <span>Google+</span></a></li>
             <li class='foot-li'><a href='https://www.twitter.com' target='_blank'><i class='fa fa-twitter' aria-hidden='true'></i><span>   Twitter</span></a></li>
           </ul>
+        </aside>
+      </article>
     </footer>
         <!-- scripts for javascript :: DO NOT TAMPER WITH THE ORDER :: -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
