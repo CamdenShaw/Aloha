@@ -169,7 +169,7 @@ a:hover {
   width: 100%;
 }
 
-.handily {
+.crafted-title {
   font-family: Playfair Display-italic;
   font-weight: 300;
 }
@@ -264,7 +264,7 @@ a:hover {
   border-top: 4px solid white;
 }
 
-.cat-text a {
+.category-text a {
   color: white;
   font-size: 1.5em;
   font-family: Raleway-bold;
@@ -280,18 +280,18 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
-.cat-text a:hover {
+.category-text a:hover {
   color: #F4E98C;
 }
 
-.lovely {
+.products-section {
   margin-top: 4em;
   padding-left: 5%;
   padding-right: 5%;
   text-align: center;
 }
 
-.lovely h3 {
+.products-section h3 {
   font-family: 'Playfair Display-italic';
   font-size: 2.5em;
   font-weight: 300;
@@ -453,16 +453,16 @@ a:hover {
   width: 100%;
 } 
 
-.foot-li {
+.list-item {
   display: inline;
   padding: 10px;
 }
 
-.foot-li span {
+.list-item span {
   display: none;
 }
 
-.foot-add {
+.foot-address {
   color: #969696;
   text-align: center;
   margin: 0;
@@ -647,7 +647,7 @@ a:hover {
     display: inline;
   }
 
-  .foot-add {
+  .foot-address {
     font-size: 0.9em;
     margin: 40px 0 0 0;
     order: 2;
@@ -670,20 +670,20 @@ a:hover {
     text-align: left;
   }
 
-  .foot-li {
+  .list-item {
     align-self: left;
     display: list-item;
     list-style-type: none;
     padding: 5px 0 6px 0;
   }
 
-  .foot-li span {
+  .list-item span {
     display: inline;
     font-family: 'Raleway';
     font-weight: 400;
   }
 
-  .foot .foot-li a {
+  .foot .list-item a {
     text-decoration: none;
   }
 }
