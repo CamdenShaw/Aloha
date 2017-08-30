@@ -77,11 +77,12 @@ a:hover {
   display: flex;
   justify-content: center;
   order: 3;
-  padding: 11px;
+  margin: auto 11px;
   width: 92%;
 }
 
 .click {
+  padding-left: 0px;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -190,7 +191,7 @@ a:hover {
 .rectangle {
   box-sizing: border-box;
   flex-basis: 100%;
-  padding-top: 50%;
+  padding-top: calc(.5 * 100vw);
   position: relative;
   width: 100%;
   z-index: 0;
@@ -198,7 +199,7 @@ a:hover {
 
 .square {
   box-sizing: border-box;
-  padding-top: 50%;
+  padding-top: calc(.5 * 100vw);
   position: relative;
   width: 50%;
   z-index:0;
@@ -558,12 +559,12 @@ a:hover {
 
   .rectangle {
     flex-basis: 50%;
-    padding-top: 25%;
+    padding-top: calc(.25 * 100vw);
   }
 
   .square {
     flex-basis: 25%;
-    padding-top: 25%;
+    padding-top: calc(.25 * 100vw);
   }
 
   .rectangle.one {

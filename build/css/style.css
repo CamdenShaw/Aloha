@@ -91,10 +91,11 @@ a:hover {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-  padding: 11px;
+  margin: auto 11px;
   width: 92%; }
 
 .click {
+  padding-left: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -220,7 +221,7 @@ a:hover {
           box-sizing: border-box;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  padding-top: 50%;
+  padding-top: calc(.5 * 100vw);
   position: relative;
   width: 100%;
   z-index: 0; }
@@ -228,7 +229,7 @@ a:hover {
 .square {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 50%;
+  padding-top: calc(.5 * 100vw);
   position: relative;
   width: 50%;
   z-index: 0; }
@@ -575,11 +576,11 @@ a:hover {
   .rectangle {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-    padding-top: 25%; }
+    padding-top: calc(.25 * 100vw); }
   .square {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
-    padding-top: 25%; }
+    padding-top: calc(.25 * 100vw); }
   .rectangle.one {
     border-right: 4px solid white; }
   .square.two {
