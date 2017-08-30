@@ -308,17 +308,23 @@ a:hover {
 
 .carousel-cell {
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   height: auto;
-  margin-right: 10px;
-  transform: translate(9.5%,0%); 
   width: 100%;
 }
 
+.carousel-cell aside {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .carousel-picture {
-  height: auto;
-  left: 50%;
-  transform: translate(0.5%,0%);
-  width: 80%;
+  width: 225px;
+  height: 225px;
 }
 
 .carousel-category {
@@ -329,7 +335,6 @@ a:hover {
   margin-bottom: 4px;
   text-transform: uppercase;
   text-align: center;
-  transform: translate(-9.5%,0%);
 }
 
 .carousel-label {
@@ -339,7 +344,6 @@ a:hover {
   margin-top: 8px;
   margin-bottom: 0px;
   text-align: center;
-  transform: translate(-9.5%,0%);
 }
 
 .carousel-price {
@@ -440,7 +444,7 @@ a:hover {
   display: none;
 }
 
-.foot-soc {
+.foot-social-media {
   padding: 0;
   width: 100%;
 }
@@ -598,8 +602,8 @@ a:hover {
   }
 
   .carousel-picture {
-    transform: translate(11%,0%);
-    width: 65%;
+    width: 250px;
+    height: 250px;
   }
 
   .carousel-category {
@@ -656,7 +660,7 @@ a:hover {
     width: 75%;
   }
 
-  .foot-soc {
+  .foot-social-media {
     height: 300px;
     order: 3;
     padding:0;
@@ -695,20 +699,16 @@ a:hover {
   }
 }
 
-@media (min-width: 720px) {
-
-  .subscribe p {
-    align-self: center;
-    max-width: 710px;
-  }
+@media (min-width:720px) {
+  .carousel-cell {
+    width: 33%;
+    height: 400px;
 }
 
-@media (min-width: 827px) {
-  .handy p {
-    left: 50%;
-    align-self: center;
-    max-width: 650px;
-  }
+.carousel-picture {
+  height: 275px;
+  width: 275px;
+}
 }
 
 @media(min-width: 1240px){
@@ -752,14 +752,15 @@ a:hover {
 
   .carousel-cell {
     width: 25%;
+    height: 500px;
   }
 
   .carousel-picture {
-    width: 85%;
-    transform: translate(-2.5%, 0);
+    height: 300px;
+    width: 300px;
   }
 
-  .foot-soc {
+  .foot-social-media {
     width: 10%;
   }
 }
