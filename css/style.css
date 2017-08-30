@@ -314,14 +314,14 @@ a:hover {
   width: 100%;
 }
 
-.car-pic {
+.carousel-picture {
   height: auto;
   left: 50%;
   transform: translate(0.5%,0%);
   width: 80%;
 }
 
-.car-cat {
+.carousel-category {
   color: #969696;
   font-size: 10px;
   font-weight: 600;
@@ -332,7 +332,7 @@ a:hover {
   transform: translate(-9.5%,0%);
 }
 
-.car-lab {
+.carousel-label {
   color: #e2574c;
   font-size: 21px;
   font-weight: 100;
@@ -342,21 +342,13 @@ a:hover {
   transform: translate(-9.5%,0%);
 }
 
-.car-dollas {
+.carousel-price {
   color: #969696;
   font-size: 14px;
   font-family: 'Raleway-bold';
   font-weight: 500;
   margin-top: 0px;
   text-align: center;
-}
-
-.car-dollas.cc{
-  font-family: 'Raleway-bold';
-  font-weight: 500;
-  margin-top: 24px;
-  margin-bottom: 60px;
-  transform: translate(-9.5%,0%); 
 }
 
 .subscribe {
@@ -442,15 +434,6 @@ a:hover {
   margin:8px;
   text-align: center;
   width: 91%;
-}
-
-.foot-head.cc {
-  font-size: 1.1em;
-  margin-bottom: 40px;
-  margin-left: -35px;
-  padding-top: 40px;
-  padding-right: 35px;
-  width: 102px;
 }
 
 .foot-head .hide {
@@ -614,22 +597,18 @@ a:hover {
     width:50%;
   }
 
-  .car-pic {
+  .carousel-picture {
     transform: translate(11%,0%);
     width: 65%;
   }
 
-  .car-cat {
+  .carousel-category {
     font-size: 0.75em;
     font-weight: 600;
   }
 
-  .car-dollas {
+  .carousel-price {
     font-size: 0.8em;
-  }
-
-  .car-dollas.cc {
-    font-size: 1.05em;
   }
 
   .subscribe p {
@@ -661,13 +640,6 @@ a:hover {
     order: 1;
     padding-bottom: 16px;
     text-align: left;
-    width: 60%;
-  }
-
-  .foot-head.cc {
-    font-size: 0.9em;
-    margin: 0;
-    padding: 16px 0 0 0;
     width: 60%;
   }
 
@@ -782,7 +754,7 @@ a:hover {
     width: 25%;
   }
 
-  .car-pic {
+  .carousel-picture {
     width: 85%;
     transform: translate(-2.5%, 0);
   }
