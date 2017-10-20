@@ -1,6 +1,3 @@
-// //testing to see if javascript is working
-console.log('Hello!  Do I exist?');
-
 var windowW = window.innerWidth;
 
 $('.main-carousel').flickity({
@@ -26,7 +23,6 @@ else if (windowW===1240) {
   })
 }
 
- $(document).ready(function(){
   $("a").on('click', function(event) {
 
     if (this.hash !== ""){
@@ -41,24 +37,23 @@ else if (windowW===1240) {
       });
     } 
   });
-});
 
-  function validateForm() {
-    var eMail = document.forms["newsletter"]["email"].value;
-    var at = eMail.indexOf("@");
-    var dot = eMail.lastIndexOf(".");
-    if (at<1 || dot<at+2 || dot+2>=eMail.length) {
-        alert("Not a valid e-mail address");
-        return false;
-    }
-    else alert('Thank you for subscribing!');
+function validateForm() {
+  var eMail = document.forms["newsletter"]["email"].value;
+  var at = eMail.indexOf("@");
+  var dot = eMail.lastIndexOf(".");
+  if (at<1 || dot<at+2 || dot+2>=eMail.length) {
+      alert("Not a valid e-mail address");
+      return false;
+  }
+  else alert('Thank you for subscribing!');
 }
 
-$(function() {
-   $("a[href^='#']").not("a[href='#']").click(function() {
-      $("#"+$(this).attr("href").slice(1)+"").focus();
-   });
-});
+// $(function() {
+//    $("a[href^='#']").not("a[href='#']").click(function() {
+//       $("#"+$(this).attr("href").slice(1)+"").focus();
+//    });
+// });
   
 $('.submit').on('click', function(){
   validateForm();
